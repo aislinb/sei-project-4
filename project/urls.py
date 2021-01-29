@@ -20,6 +20,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/crops/', include('crops.urls')),
     path('api/crop_tags/', include('crop_tags.urls')),
+    path('api/companion_groups/', include('companion_groups.urls')),
     path('api/comments/', include('comments.urls')),
     path('api/auth/', include('jwt_auth.urls'))
 ]

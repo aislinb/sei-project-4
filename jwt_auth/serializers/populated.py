@@ -4,5 +4,5 @@ from ..serializers.common import UserSerializer
 
 class PopulatedUserSerializer(UserSerializer):
 
-    created_crop = CropSerializer(many=True)
+    created_crops = CropSerializer(many=True)
     posted_comments = CommentSerializer(many=True)

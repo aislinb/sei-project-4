@@ -1,7 +1,8 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-from rest_framework.exceptions import NotFound
+from rest_framework.exceptions import NotFound, PermissionDenied
+from rest_framework.permissions import IsAuthenticatedOrReadOnly, IsAuthenticated
 
 from .models import Crop
 from .serializers.common import CropSerializer
@@ -17,6 +18,7 @@ class CropListView(APIView):
 
     
     def post(self, request):
+        request.data['owner'] = request.user.id
         crop_to_create = CropSerializer(data=request.data)
         if crop_to_create.is_valid():
             crop_to_create.save()
@@ -40,17 +42,17 @@ class CropDetailView(APIView): # extend the APIView
 
     def put(self, request, pk):
         crop_to_update = self.get_crop(pk=pk)
-        # if crop_to_update.owner.id != request.user.id:
-        #     raise PermissionDenied()
+        if crop_to_update.owner.id != request.user.id:
+            raise PermissionDenied()
         updated_crop = CropSerializer(crop_to_update, data=request.data)
         if updated_crop.is_valid():
             updated_crop.save()
             return Response(updated_crop.data, status=status.HTTP_202_ACCEPTED)
         return Response(updated_crop.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
 
-    def delete(self, _request, pk):
+    def delete(self, request, pk):
         crop_to_delete = self.get_crop(pk=pk)
-        # if crop_to_delete.owner.id != request.user.id:
-        #     raise PermissionDenied()
+        if crop_to_delete.owner.id != request.user.id:
+            raise PermissionDenied()
         crop_to_delete.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
