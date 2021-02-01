@@ -12,11 +12,13 @@ class Crop(models.Model):
     sowing_method = models.TextField(max_length=400)
     tags = models.ManyToManyField(
         'crop_tags.CropTag',
-        related_name="crops"
+        related_name="crops",
+        blank=True
     )
     companions = models.ManyToManyField(
         'companion_groups.CompanionGroup',
-        related_name="crops"
+        related_name="crops",
+        blank=True
     )
     liked_by = models.ManyToManyField(
         'jwt_auth.User',

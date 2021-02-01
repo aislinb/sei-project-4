@@ -28,7 +28,7 @@ function Nav() {
       <div className="container">
         <div className="navbar-brand">
           <Link to="/" className="navbar-item">
-            <span role="img" aria-label="logo" className="title">👩🏼‍🌾</span>
+            <span role="img" aria-label="logo" className="title">🥬</span>
           </Link>
           <span onClick={handleMenuToggle} className={`navbar-burger ${isOpen ? 'is-active' : ''}`}>
             <span></span>

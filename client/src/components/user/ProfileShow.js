@@ -42,7 +42,7 @@ function profileShow() {
 
   return (
     <main className="profile-show">
-      <h1>this will be the profile show page</h1>
+      <h1>Your Profile Details</h1>
       {isLoggedIn ?
         <>
           <div className="profile-container block-form">
@@ -79,14 +79,6 @@ function profileShow() {
             </div>
             <div className="block-form bottom-half">
               <div className="block-form full-width">
-                <h4>About Me:</h4>
-                {!user.userBio ? 
-                  <div>You have not added anything about yourself yet!</div>
-                  :
-                  <p>{user.userBio}</p>
-                }
-              </div>
-              <div className="block-form full-width">
                 <h4>Crops you have created:</h4>
                 {user && crops ? 
                   crops.map(event => {
@@ -105,7 +97,7 @@ function profileShow() {
               </div>
               <div className="block-form full-width">
                 <button className="edit-btn">
-                  <Link to={'/update-profile'} className="edit-button">Edit my profile</Link>
+                  <Link to={'/update-profile/'} className="edit-button">Edit my profile</Link>
                 </button>
               </div>
             </div>

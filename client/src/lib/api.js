@@ -20,7 +20,7 @@ export function getSingleCrop(id) {
 }
 
 export function createCrop(formdata) {
-  return axios.post(`${baseUrl}/crops`, formdata, headers())
+  return axios.post(`${baseUrl}/crops/`, formdata, headers())
 }
 
 export function deleteCrop(id) {

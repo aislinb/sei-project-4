@@ -5,26 +5,28 @@ import { createCrop } from '../../lib/api'
 import { useHistory } from 'react-router-dom'
 
 
-function cropNew() {
+function CropNew() {
+  //  axios get request to populate the tags/companions and then be able to post 
   const history = useHistory()
   const { formdata, handleChange, errors, setErrors } = useForm({
-    name: '', 
-    // Get ISO formatted dated from user selection. need to restrict date to only 2020
+    name: '',
     binomialName: '', 
     description: '',
-    isPerennial: '',
+    isPerennial: false,
     image: '',
-    growingDays: '',
-    sowingMethod: '',
-    tags: '',
-    companions: ''
+    growingDays: 7,
+    sowingMethod: ''
+    // tags: '', populate with axios.get - write logic to enable people to select multiple tags. when you post data, append tags 
+    // companions: ''
     // work out how to find tags and companions by id ^
   })
 
   const handleSubmit = async (event) => {
     event.preventDefault()
     try {
+      console.log(formdata)
       const { data } = await createCrop(formdata)
+      
       history.push(`/crops/${data.id}`)
     } catch (err) {
       setErrors(err.response.data.errors)
@@ -45,4 +47,4 @@ function cropNew() {
   )
 }
 
-export default cropNew
+export default CropNew
