@@ -3,7 +3,10 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 import Nav from './components/common/Nav'
 import Home from './components/common/Home'
+import Footer from './components/common/Footer'
 import CropIndex from './components/crops/CropIndex'
+import CropShow from './components/crops/CropShow'
+import ProfileShow from './components/user/ProfileShow'
 
 import Register from './components/auth/Register'
 import Login from './components/auth/Login'
@@ -17,10 +20,13 @@ function App() {
       <Nav />
       <Switch>
         <Route exact path="/" component={Home}/>
+        <Route path="/crops/" component={CropShow} />
         <Route path="/crops/" component={CropIndex} />
-        <Route path="/register" component={Register} />
-        <Route path="/login" component={Login} />
+        <Route path="/register/" component={Register} />
+        <Route path="/login/" component={Login} />
+        <Route path="/profile/" component={ProfileShow} />
       </Switch>
+      <Footer />
     </BrowserRouter>
   )
 

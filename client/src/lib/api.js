@@ -40,3 +40,17 @@ export function registerUser(formdata) {
 export function loginUser(formdata) {
   return axios.post(`${baseUrl}/auth/login/`, formdata)
 }
+
+export function showUserProfile() {
+  return axios.get(`${baseUrl}/auth/profile/`, headers())
+}
+
+export function editUserProfile(formdata) {
+  return axios.put(`${baseUrl}/update-profile/`, formdata, headers())
+}
+
+export function getAllUsers() {
+  return axios.get(`${baseUrl}/auth/users/`, headers())
+}
+
+// COMMENTS : add, delete, view all comments. also crop tags and companion groups

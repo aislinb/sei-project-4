@@ -20,7 +20,7 @@ function Home() {
 
   return (
     <main>
-      <h1>Crop Home page</h1>
+      <h1>Crop Home page - add carousel and highly rated</h1>
     </main>
     
   )

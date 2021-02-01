@@ -34,7 +34,7 @@ function CropIndex() {
       <div className="index-header">
         <h1>Crop Index page</h1>
         {isAuthenticated ? 
-          <Link to="/crops/new"><button className="link-button" >
+          <Link to="/crops/new/"><button className="link-button" >
               Add a Crop
           </button></Link>
           :
