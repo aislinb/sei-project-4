@@ -32,6 +32,11 @@ function CropIndex() {
   return (
     <main>
       <div className="flex-div central-body index-page">
+        <div className="top-banner">
+          <figure>
+            <img src="https://www.natoora.co.uk/img/pages/our-produce/natoora-ourproduce-banner.jpg" alt="banner-image" />
+          </figure>
+        </div>
         <div className="index-header">
           <h1>Crop Index page</h1>
           {isAuthenticated ? 
@@ -49,23 +54,25 @@ function CropIndex() {
                   placeholder="Select a category..."
                 />
               </div>
-              <ul className="index-list">
-                {crops.map(item => {
-                // De-structured fields from the event object
-                  const { id, name, image } = item
-                  return (
-                    <li key={id}>
-                      <Link to={`/crops/${id}`}>
-                        <h3>{name}</h3>
-                        <figure>
-                          <img src={image} alt={name} />
-                        </figure>
-                      </Link>
-                    </li>
-                  )
-                })
-                }
-              </ul>
+              <div className="crops-wrapper">
+                <div className="index-list">
+                  {crops.map(item => {
+                  // De-structured fields from the event object
+                    const { id, name, image } = item
+                    return (
+                      <div className="index-item" key={id}>
+                        <Link to={`/crops/${id}`}>
+                          <h3>{name}</h3>
+                          <figure>
+                            <img src={image} alt={name} />
+                          </figure>
+                        </Link>
+                      </div>
+                    )
+                  })
+                  }
+                </div>
+              </div>
             </div>
             :
             <div>

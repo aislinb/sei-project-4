@@ -13,10 +13,7 @@
         2, 3
       ],
       "companions": [
-        {
-          "id": 1,
-          "name": "group-1"
-        }
+        1
       ],
       "sowing_method": "Forcing is the art of growing in the dark. To force is to re-plant a harvested root in the dark and re-grow from it. Without light to photosynthesise, the plant changes character and finds a new identity. Forced plants have no chlorophyll; this lends them their exceptional sweetness, silk-like texture and brilliant colour. As agriculture becomes large-scale and less skilful, historical growing methods like these are under threat. Today, genuine forced produce is rare, and the market is increasingly flooded with fakes.",
     "owner": 2,
@@ -40,10 +37,7 @@
         4, 9
       ],
       "companions": [
-        {
-          "id": 1,
-          "name": "group-1"
-        }
+        1
       ],
       "sowing_method": "This season the first harvests were slightly smaller than previous years, due to the incredibly high temperatures we’ve seen this summer but nothing else about this exceptional variety has was affected. Near-black, deep red flesh and that perfect balance of sweetness and acidity we’ve come to expect.",
     "owner": 2,
@@ -67,10 +61,7 @@
         6, 9
       ],
       "companions": [
-        {
-          "id": 1,
-          "name": "group-1"
-        }
+        1
       ],
       "sowing_method": "This season the first harvests were slightly smaller than previous years, due to the incredibly high temperatures we’ve seen this summer but nothing else about this exceptional variety has was affected. Near-black, deep red flesh and that perfect balance of sweetness and acidity we’ve come to expect.",
     "owner": 2,
@@ -94,10 +85,7 @@
         6, 9
       ],
       "companions": [
-        {
-          "id": 1,
-          "name": "group-1"
-        }
+        1
       ],
       "sowing_method": "This season the first harvests were slightly smaller than previous years, due to the incredibly high temperatures we’ve seen this summer but nothing else about this exceptional variety has was affected. Near-black, deep red flesh and that perfect balance of sweetness and acidity we’ve come to expect.",
     "owner": 2,
@@ -121,10 +109,7 @@
         2, 4, 5, 7
       ],
       "companions": [
-        {
-          "id": 1,
-          "name": "group-1"
-        }
+        1
       ],
       "sowing_method": "This season the first harvests were slightly smaller than previous years, due to the incredibly high temperatures we’ve seen this summer but nothing else about this exceptional variety has was affected. Near-black, deep red flesh and that perfect balance of sweetness and acidity we’ve come to expect.",
     "owner": 2,
@@ -148,10 +133,7 @@
         2, 4, 5, 7
       ],
       "companions": [
-        {
-          "id": 1,
-          "name": "group-1"
-        }
+        1
       ],
       "sowing_method": "This season the first harvests were slightly smaller than previous years, due to the incredibly high temperatures we’ve seen this summer but nothing else about this exceptional variety has was affected. Near-black, deep red flesh and that perfect balance of sweetness and acidity we’ve come to expect.",
     "owner": 2,
@@ -170,15 +152,12 @@
       "growing_days": 100,
       "is_perennial": false,
       "description": "With Raf, the tell-tale sign is a wide-ridged, flat bottom, clearly identifiable over the pointed, modern hybrid varieties being sold under the same name. Renowned for the remarkable balance between its sweet, crisp flesh and brightly acidic seeds.",
-      "image": "https://www.natoora.co.uk/img/product-profile/winter-tomato/double-image_Raf.jpg",
+      "image": "https://www.natoora.co.uk/img/pages/our-produce/natoora-winter-tomatoes-banner-preview.jpg",
       "tags": [
         2, 4, 5, 7
       ],
       "companions": [
-        {
-          "id": 1,
-          "name": "group-1"
-        }
+        1
       ],
       "sowing_method": "This season the first harvests were slightly smaller than previous years, due to the incredibly high temperatures we’ve seen this summer but nothing else about this exceptional variety has was affected. Near-black, deep red flesh and that perfect balance of sweetness and acidity we’ve come to expect.",
     "owner": 2,

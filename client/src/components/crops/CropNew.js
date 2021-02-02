@@ -37,6 +37,11 @@ function CropNew() {
   return (
     <main>
       <div className="flex-div central-body new-crop">
+        <div className="top-banner">
+          <figure>
+            <img src="https://www.natoora.co.uk/img/pages/our-produce/natoora-ourproduce-banner.jpg" alt="banner-image" />
+          </figure>
+        </div>
         <div className="flex-div">
           <h1 className="form-heading">Add one of your favourite crops to grow</h1>
           <CropForm 

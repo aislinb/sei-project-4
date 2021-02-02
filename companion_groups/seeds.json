@@ -1,0 +1,9 @@
+[
+  {
+    "model": "companion_groups.companiongroup",
+    "pk": 1,
+    "fields": {
+      "name": "group-1"
+    }
+  }
+]

@@ -185,5 +185,19 @@ main {
     display: flex;
     flex-direction: column;
     margin: auto;
+    width: 90%;
+  }
+
+  .crops-wrapper {
+    width: 90%;
+    display: flex;
+
+    .index-list {
+      display: flex;
+      flex-direction: row;
+    }
+    .index-item {
+      width: 33.33%;
+    }
   }
 }
