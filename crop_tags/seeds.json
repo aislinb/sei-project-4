@@ -3,7 +3,63 @@
     "model": "crop_tags.croptype",
     "pk": 1,
     "fields": {
-      "name": "Fire"
+      "name": "Herbs"
     }
   },
+  {
+    "model": "crop_tags.croptype",
+    "pk": 2,
+    "fields": {
+      "name": "Salad"
+    }
+  },
+  {
+    "model": "crop_tags.croptype",
+    "pk": 3,
+    "fields": {
+      "name": "Annuals"
+    }
+  },
+  {
+    "model": "crop_tags.croptype",
+    "pk": 4,
+    "fields": {
+      "name": "Italian"
+    }
+  },
+  {
+    "model": "crop_tags.croptype",
+    "pk": 5,
+    "fields": {
+      "name": "Tomatoes"
+    }
+  },
+  {
+    "model": "crop_tags.croptype",
+    "pk": 6,
+    "fields": {
+      "name": "Citrus"
+    }
+  },
+  {
+    "model": "crop_tags.croptype",
+    "pk": 7,
+    "fields": {
+      "name": "Heirloom"
+    }
+  },
+  {
+    "model": "crop_tags.croptype",
+    "pk": 8,
+    "fields": {
+      "name": "Leafy greens"
+    }
+  },
+  {
+    "model": "crop_tags.croptype",
+    "pk": 9,
+    "fields": {
+      "name": "Fruit"
+    }
+  }
 ]

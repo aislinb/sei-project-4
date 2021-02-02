@@ -10,7 +10,7 @@
       "description": "During radicchio season, we work direct with growers producing the real deal. As forced bitter leaves gain popularity, industrial growers change their methods to meet demand. Real forcing is growing artistry we must fight to preserve. Our growers know that to produce genuine flavour, they must wait for the first frosts and transplant their chicories for the crucial second stage of growth. Industrial growers have eliminated this crucial final stage of maturation by selecting seeds designed to self-blanch in the field. Harvested early to meet demand, these intensively-grown leaves are dull in colour and limp in texture. If left until the temperature truly drops, the plants will build a dense concentration of essential salts and sugars for survival. This is the moment to harvest for regrowth. Pared back, the bare roots are re-planted in the dark and come back as tight, crisp heads with a depth of complex flavour.",
       "image": "https://www.natoora.co.uk/img/pages/our-produce/natoora-ourproduce-forced-radicchio.jpg",
       "tags": [
-        4
+        2, 3
       ],
       "companions": [
         {
@@ -25,5 +25,169 @@
       2
     ]
     }
+  },
+  {
+    "model": "crops.crop",
+    "pk": 2,
+    "fields": {
+      "name": "BOURJASOTTE NOIRE FIGS",
+      "binomial_name": "Violette de Solliès",
+      "growing_days": 100,
+      "is_perennial": false,
+      "description": "You’ll see figs on the market throughout the year, each variety selected for yield and harvested hard and underripe for ease of transport and an extended shelf life. We only source one variety during their short, natural season, as no other kind matches Bourjasotte Noire for flavour and consistency. We’ve adapted our supply chain to bring in these figs fully ripe, when the fruit has developed its characteristic dense, creamy texture and reached a naturally high concentration of natural sugars.",
+      "image": "https://www.natoora.co.uk/img/pages/our-produce/natoora-ourproduce-noir-figd.jpg",
+      "tags": [
+        4, 9
+      ],
+      "companions": [
+        {
+          "id": 1,
+          "name": "group-1"
+        }
+      ],
+      "sowing_method": "This season the first harvests were slightly smaller than previous years, due to the incredibly high temperatures we’ve seen this summer but nothing else about this exceptional variety has was affected. Near-black, deep red flesh and that perfect balance of sweetness and acidity we’ve come to expect.",
+    "owner": 2,
+    "liked_by": [
+      1,
+      2
+    ]
+    }
+  },
+  {
+    "model": "crops.crop",
+    "pk": 3,
+    "fields": {
+      "name": "GREEN CITRUS",
+      "binomial_name": "Green Pink Navel, Green Navel, Green Mandarin",
+      "growing_days": 100,
+      "is_perennial": false,
+      "description": "Bergamots represented a new way to use citrus. On sourcing trips, we looked again at green-skinned Mandarins and Navel Oranges, technically unripe but full of potential. Citrus juice and zest are at their most potent at this stage, mellowing as developing sugars balance out their fragrant acidity.",
+      "image": "https://www.natoora.co.uk/img/pages/our-produce/natoora-greencitrus-banner-preview.jpg",
+      "tags": [
+        6, 9
+      ],
+      "companions": [
+        {
+          "id": 1,
+          "name": "group-1"
+        }
+      ],
+      "sowing_method": "This season the first harvests were slightly smaller than previous years, due to the incredibly high temperatures we’ve seen this summer but nothing else about this exceptional variety has was affected. Near-black, deep red flesh and that perfect balance of sweetness and acidity we’ve come to expect.",
+    "owner": 2,
+    "liked_by": [
+      1,
+      2
+    ]
+    }
+  },
+  {
+    "model": "crops.crop",
+    "pk": 4,
+    "fields": {
+      "name": "GREEN CITRUS",
+      "binomial_name": "Green Pink Navel, Green Navel, Green Mandarin",
+      "growing_days": 100,
+      "is_perennial": false,
+      "description": "Bergamots represented a new way to use citrus. On sourcing trips, we looked again at green-skinned Mandarins and Navel Oranges, technically unripe but full of potential. Citrus juice and zest are at their most potent at this stage, mellowing as developing sugars balance out their fragrant acidity.",
+      "image": "https://www.natoora.co.uk/img/pages/our-produce/natoora-greencitrus-banner-preview.jpg",
+      "tags": [
+        6, 9
+      ],
+      "companions": [
+        {
+          "id": 1,
+          "name": "group-1"
+        }
+      ],
+      "sowing_method": "This season the first harvests were slightly smaller than previous years, due to the incredibly high temperatures we’ve seen this summer but nothing else about this exceptional variety has was affected. Near-black, deep red flesh and that perfect balance of sweetness and acidity we’ve come to expect.",
+    "owner": 2,
+    "liked_by": [
+      1,
+      2
+    ]
+    }
+  },
+  {
+    "model": "crops.crop",
+    "pk": 5,
+    "fields": {
+      "name": "BLACK IBERICO ANDALUSIA TOMATOES",
+      "binomial_name": "S. lycopersicum",
+      "growing_days": 100,
+      "is_perennial": false,
+      "description": "We look for a tight, wine-dark skin in this variety, a sign that the fruit has ripened slowly in the stress of the cold. Industrially-grown examples will be lighter in colour, a sign of rapid yield. Ripening earlier than the Raf, they have a more saline flavour in their meaty flesh.",
+      "image": "https://www.natoora.co.uk/img/product-profile/winter-tomato/natoora-winter-tomato-banner.jpg",
+      "tags": [
+        2, 4, 5, 7
+      ],
+      "companions": [
+        {
+          "id": 1,
+          "name": "group-1"
+        }
+      ],
+      "sowing_method": "This season the first harvests were slightly smaller than previous years, due to the incredibly high temperatures we’ve seen this summer but nothing else about this exceptional variety has was affected. Near-black, deep red flesh and that perfect balance of sweetness and acidity we’ve come to expect.",
+    "owner": 2,
+    "liked_by": [
+      1,
+      2
+    ]
+    }
+  },
+  {
+    "model": "crops.crop",
+    "pk": 6,
+    "fields": {
+      "name": "CAMONE SARDINIA VARIEGATED TOMATOES",
+      "binomial_name": "S. lycopersicum",
+      "growing_days": 100,
+      "is_perennial": false,
+      "description": "We look for a tight, wine-dark skin in this variety, a sign that the fruit has ripened slowly in the stress of the cold. Industrially-grown examples will be lighter in colour, a sign of rapid yield. Ripening earlier than the Raf, they have a more saline flavour in their meaty flesh.",
+      "image": "https://www.natoora.co.uk/img/product-profile/winter-tomato/double-image_Camone.jpg",
+      "tags": [
+        2, 4, 5, 7
+      ],
+      "companions": [
+        {
+          "id": 1,
+          "name": "group-1"
+        }
+      ],
+      "sowing_method": "This season the first harvests were slightly smaller than previous years, due to the incredibly high temperatures we’ve seen this summer but nothing else about this exceptional variety has was affected. Near-black, deep red flesh and that perfect balance of sweetness and acidity we’ve come to expect.",
+    "owner": 2,
+    "liked_by": [
+      1,
+      2
+    ]
+    }
+  },
+  {
+    "model": "crops.crop",
+    "pk": 7,
+    "fields": {
+      "name": "ORANGE IBERICO ANDALUSIA TOMATOES",
+      "binomial_name": "S. lycopersicum",
+      "growing_days": 100,
+      "is_perennial": false,
+      "description": "With Raf, the tell-tale sign is a wide-ridged, flat bottom, clearly identifiable over the pointed, modern hybrid varieties being sold under the same name. Renowned for the remarkable balance between its sweet, crisp flesh and brightly acidic seeds.",
+      "image": "https://www.natoora.co.uk/img/product-profile/winter-tomato/double-image_Raf.jpg",
+      "tags": [
+        2, 4, 5, 7
+      ],
+      "companions": [
+        {
+          "id": 1,
+          "name": "group-1"
+        }
+      ],
+      "sowing_method": "This season the first harvests were slightly smaller than previous years, due to the incredibly high temperatures we’ve seen this summer but nothing else about this exceptional variety has was affected. Near-black, deep red flesh and that perfect balance of sweetness and acidity we’ve come to expect.",
+    "owner": 2,
+    "liked_by": [
+      1,
+      2
+    ]
+    }
   }
+  
+
 ]

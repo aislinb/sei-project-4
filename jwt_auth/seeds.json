@@ -17,6 +17,101 @@
       "groups": [],
       "user_permissions": []
     }
+  },
+  {
+    "model": "jwt_auth.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$216000$6PpMENlem0eN$as41Jq+m4cWKlFN0QBlMMnMGbRYVba0x3nBYQ35clSQ=",
+      "last_login": "2021-01-25T12:25:12.675Z",
+      "is_superuser": true,
+      "username": "Jack",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2021-01-25T12:20:29.699Z",
+      "email": "jack@email.com",
+      "first_name": "Jack",
+      "last_name": "May",
+      "profile_image": "https://www.google.com/search?q=kitten&sxsrf=ALeKk01sG1c4CuFD2UGF_Bf823QDI41ZyA:1612268202120&tbm=isch&source=iu&ictx=1&fir=004dgK6UgwXiXM%252C0ObwAsOsafiLsM%252C_&vet=1&usg=AI4_-kTbCaSGU1xBwM9-iq5vUue6wS-2wA&sa=X&ved=2ahUKEwjy6eCLl8vuAhXSiFwKHXpZCKIQ9QF6BAgDEAE#imgrc=004dgK6UgwXiXM",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "jwt_auth.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$216000$6PpMENlem0eN$as41Jq+m4cWKlFN0QBlMMnMGbRYVba0x3nBYQ35clSQ=",
+      "last_login": "2021-01-25T12:25:12.675Z",
+      "is_superuser": true,
+      "username": "Char",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2021-01-25T12:20:29.699Z",
+      "email": "char@email.com",
+      "first_name": "Charlotte",
+      "last_name": "Morgan",
+      "profile_image": "https://www.google.com/search?q=kitten&sxsrf=ALeKk01sG1c4CuFD2UGF_Bf823QDI41ZyA:1612268202120&tbm=isch&source=iu&ictx=1&fir=004dgK6UgwXiXM%252C0ObwAsOsafiLsM%252C_&vet=1&usg=AI4_-kTbCaSGU1xBwM9-iq5vUue6wS-2wA&sa=X&ved=2ahUKEwjy6eCLl8vuAhXSiFwKHXpZCKIQ9QF6BAgDEAE#imgrc=004dgK6UgwXiXM",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "jwt_auth.user",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$216000$6PpMENlem0eN$as41Jq+m4cWKlFN0QBlMMnMGbRYVba0x3nBYQ35clSQ=",
+      "last_login": "2021-01-25T12:25:12.675Z",
+      "is_superuser": true,
+      "username": "Lee",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2021-01-25T12:20:29.699Z",
+      "email": "lee@email.com",
+      "first_name": "Lee",
+      "last_name": "Burgess",
+      "profile_image": "https://www.google.com/search?q=kitten&sxsrf=ALeKk01sG1c4CuFD2UGF_Bf823QDI41ZyA:1612268202120&tbm=isch&source=iu&ictx=1&fir=004dgK6UgwXiXM%252C0ObwAsOsafiLsM%252C_&vet=1&usg=AI4_-kTbCaSGU1xBwM9-iq5vUue6wS-2wA&sa=X&ved=2ahUKEwjy6eCLl8vuAhXSiFwKHXpZCKIQ9QF6BAgDEAE#imgrc=004dgK6UgwXiXM",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "jwt_auth.user",
+    "pk": 5,
+    "fields": {
+      "password": "pbkdf2_sha256$216000$6PpMENlem0eN$as41Jq+m4cWKlFN0QBlMMnMGbRYVba0x3nBYQ35clSQ=",
+      "last_login": "2021-01-25T12:25:12.675Z",
+      "is_superuser": true,
+      "username": "Noa",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2021-01-25T12:20:29.699Z",
+      "email": "noa@email.com",
+      "first_name": "Noa",
+      "last_name": "Filosof",
+      "profile_image": "https://www.google.com/search?q=kitten&sxsrf=ALeKk01sG1c4CuFD2UGF_Bf823QDI41ZyA:1612268202120&tbm=isch&source=iu&ictx=1&fir=004dgK6UgwXiXM%252C0ObwAsOsafiLsM%252C_&vet=1&usg=AI4_-kTbCaSGU1xBwM9-iq5vUue6wS-2wA&sa=X&ved=2ahUKEwjy6eCLl8vuAhXSiFwKHXpZCKIQ9QF6BAgDEAE#imgrc=004dgK6UgwXiXM",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "jwt_auth.user",
+    "pk": 5,
+    "fields": {
+      "password": "pbkdf2_sha256$216000$6PpMENlem0eN$as41Jq+m4cWKlFN0QBlMMnMGbRYVba0x3nBYQ35clSQ=",
+      "last_login": "2021-01-25T12:25:12.675Z",
+      "is_superuser": true,
+      "username": "Aislin",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2021-01-25T12:20:29.699Z",
+      "email": "aislin@email.com",
+      "first_name": "Aislin",
+      "last_name": "Bamber",
+      "profile_image": "https://www.google.com/search?q=kitten&sxsrf=ALeKk01sG1c4CuFD2UGF_Bf823QDI41ZyA:1612268202120&tbm=isch&source=iu&ictx=1&fir=004dgK6UgwXiXM%252C0ObwAsOsafiLsM%252C_&vet=1&usg=AI4_-kTbCaSGU1xBwM9-iq5vUue6wS-2wA&sa=X&ved=2ahUKEwjy6eCLl8vuAhXSiFwKHXpZCKIQ9QF6BAgDEAE#imgrc=004dgK6UgwXiXM",
+      "groups": [],
+      "user_permissions": []
+    }
   }
   ]
   
