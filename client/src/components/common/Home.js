@@ -1,5 +1,6 @@
 import React from 'react'
 import { getAllCrops } from '../../lib/api'
+import HeroCarousel from 'react-hero-carousel'
 
 function Home() {
 
@@ -20,7 +21,25 @@ function Home() {
 
   return (
     <main>
-      <h1>Crop Home page - add carousel and highly rated</h1>
+      <div className="central-body">
+        <section className="hero-carousel">
+          <HeroCarousel interval={3000}>
+            <img
+              src="https://www.natoora.co.uk/img/pages/homepage/Homepage-banner_homedelivery.jpg"
+
+            />
+            <img
+              src="https://www.natoora.co.uk/img/pages/homepage/Homepage-banner-winter-tomatoes.jpg"
+            />
+            <img
+              src="https://www.natoora.co.uk/img/pages/homepage/nyc/Homepage-banner_homedelivery.jpg"
+            />
+            <img
+              src="https://www.natoora.co.uk/img/pages/homepage/Homepage-banner-earthworks.jpg"
+            />
+          </HeroCarousel>
+        </section>
+      </div>
     </main>
     
   )

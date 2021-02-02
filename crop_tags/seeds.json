@@ -1,0 +1,9 @@
+[
+  {
+    "model": "crop_tags.croptype",
+    "pk": 1,
+    "fields": {
+      "name": "Fire"
+    }
+  },
+]

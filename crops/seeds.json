@@ -1,1 +1,29 @@
 [
+  {
+    "model": "crops.crop",
+    "pk": 1,
+    "fields": {
+      "name": "Forced Radicchio",
+      "binomial_name": "Radicchio Tardivo",
+      "growing_days": 100,
+      "is_perennial": false,
+      "description": "During radicchio season, we work direct with growers producing the real deal. As forced bitter leaves gain popularity, industrial growers change their methods to meet demand. Real forcing is growing artistry we must fight to preserve. Our growers know that to produce genuine flavour, they must wait for the first frosts and transplant their chicories for the crucial second stage of growth. Industrial growers have eliminated this crucial final stage of maturation by selecting seeds designed to self-blanch in the field. Harvested early to meet demand, these intensively-grown leaves are dull in colour and limp in texture. If left until the temperature truly drops, the plants will build a dense concentration of essential salts and sugars for survival. This is the moment to harvest for regrowth. Pared back, the bare roots are re-planted in the dark and come back as tight, crisp heads with a depth of complex flavour.",
+      "image": "https://www.natoora.co.uk/img/pages/our-produce/natoora-ourproduce-forced-radicchio.jpg",
+      "tags": [
+        4
+      ],
+      "companions": [
+        {
+          "id": 1,
+          "name": "group-1"
+        }
+      ],
+      "sowing_method": "Forcing is the art of growing in the dark. To force is to re-plant a harvested root in the dark and re-grow from it. Without light to photosynthesise, the plant changes character and finds a new identity. Forced plants have no chlorophyll; this lends them their exceptional sweetness, silk-like texture and brilliant colour. As agriculture becomes large-scale and less skilful, historical growing methods like these are under threat. Today, genuine forced produce is rare, and the market is increasingly flooded with fakes.",
+    "owner": 2,
+    "liked_by": [
+      1,
+      2
+    ]
+    }
+  }
+]

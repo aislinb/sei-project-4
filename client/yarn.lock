@@ -9464,6 +9464,11 @@ react-forms@^1.0.0-rc6:
   dependencies:
     classnames "^2.2.1"
 
+react-hero-carousel@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/react-hero-carousel/-/react-hero-carousel-1.0.3.tgz#8288c065938a7c099579546f3b52c0e44f5f4aee"
+  integrity sha512-QukDtxoFvkszYA4MAv11lCSJehdKf4/Yz1/WgAg7P79hIp9DeAv/CoZhu8nltEE1rSJGAzU92LS1hShevxJvCg==
+
 react-input-autosize@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/react-input-autosize/-/react-input-autosize-3.0.0.tgz#6b5898c790d4478d69420b55441fcc31d5c50a85"

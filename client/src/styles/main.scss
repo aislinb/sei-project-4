@@ -1,13 +1,189 @@
 @import '~bulma/bulma.sass';
 
+main {
+  background-color: black;
+  width: 100%;
+}
+
+.central-body {
+  width: 85%;
+  margin: auto;
+  background-color: white;
+  padding: 200px 0;
+}
+
+.hero-carousel {
+  max-width: 1090px;
+  height: auto;
+}
+
+
 .footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: rgb(212, 240, 148);
-  color: rgb(2, 70, 16);
+  background-color: black;
+  color: white;
   text-align: center;
   font-size: 10px;
+  height: 5px;
+
 }
 
+// // nav 
+.navbar {
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  background-color: white;
+  color: black;
+  width: 85%;
+  margin: auto;
+  padding: 0 10px 0 10px;
+  font-size: 14px;
+
+  .navbar-menu {
+    padding: 20px 0 20px 0;
+  }
+
+  .navbar-item {
+    display: flex;
+    margin-right: auto;
+  }
+
+  button {
+    margin-right: 20px;
+  }
+  .logo-image{
+    
+    margin-top: 10px;
+}
+  
+}
+
+// homepage 
+
+.hero {
+  margin-bottom: 195px;
+  align-items: center;
+
+}
+
+.flex-div {
+  display: flex;
+  flex-direction: column;
+
+  
+  .block-form {
+    display: flex;
+    flex-direction: column;
+
+    .profile-pic {
+      width: 100px;
+    }
+  }
+
+}
+
+.new-crop {
+  display: flex;
+  align-items: center;
+
+  .flex-div {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    .add-crop-form {
+      display: flex;
+      flex-direction: column;
+      .block-form {
+        // display: flex;
+        // flex-direction: column;
+      }
+    }
+
+  }
+
+  .add-crop-form {
+
+  }
+}
+
+// AUTH 
+
+.register-page {
+  width: 40%;
+  margin: auto;
+  padding: 10px;
+
+  h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  
+}
+
+.login-page {
+  width: 40%;
+  margin: auto;
+
+  h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 11px;
+  }
+
+  .or {
+    text-align: center;
+    margin: 10px;
+  }
+
+}
+
+.register-form {
+  width: 250px;
+
+  .block-form {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+}
+
+// profile show page::after
+
+.profile-show {
+  width: 60%;
+  align-items: center;
+  main {
+    width: 90vw;
+    margin: 4rem auto 0 auto;
+  
+  }
+
+  .flex-div {
+    flex-direction: column;
+
+  }
+
+  .profile-container {
+    margin: auto;
+
+  }
+}
+
+//  INDEX PAGE
+
+.index-page {
+  margin: auto;
+
+  .all-crops {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+}

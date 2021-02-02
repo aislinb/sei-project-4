@@ -36,13 +36,17 @@ function CropNew() {
 
   return (
     <main>
-      <h1 className="form-heading">Add one of your favourite crops to grow</h1>
-      <CropForm 
-        handleChange={handleChange}
-        handleSubmit={handleSubmit}
-        formdata={formdata}
-        errors={errors}
-      />
+      <div className="flex-div central-body new-crop">
+        <div className="flex-div">
+          <h1 className="form-heading">Add one of your favourite crops to grow</h1>
+          <CropForm 
+            handleChange={handleChange}
+            handleSubmit={handleSubmit}
+            formdata={formdata}
+            errors={errors}
+          />
+        </div>
+      </div>
     </main>
   )
 }

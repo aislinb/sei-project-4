@@ -54,3 +54,11 @@ export function getAllUsers() {
 }
 
 // COMMENTS : add, delete, view all comments. also crop tags and companion groups
+
+export function createCropComment(formdata, id) {
+  return axios.post(`${baseUrl}/crops/${id}/comments/`, formdata, headers())
+}
+
+export function deleteCropComment(id, commentId) {
+  return axios.delete(`${baseUrl}/crops/${id}/comments/${commentId}`, headers())
+}
