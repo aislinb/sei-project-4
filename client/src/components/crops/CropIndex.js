@@ -38,7 +38,7 @@ function CropIndex() {
           </figure>
         </div>
         <div className="index-header">
-          <h1>Crop Index page</h1>
+          <p>We know the seed, soil and season of everything we source. Each of our radically seasonal fruits and vegetables has its own unique story of craftsmanship which elevates it above the monotonous landscape of industrially-cultivated, year-round produce.</p>
           {isAuthenticated ? 
             <Link to="/crops/new/"><button className="link-button" >
               Add a Crop
@@ -62,10 +62,12 @@ function CropIndex() {
                     return (
                       <div className="index-item" key={id}>
                         <Link to={`/crops/${id}`}>
-                          <h3>{name}</h3>
-                          <figure>
-                            <img src={image} alt={name} />
-                          </figure>
+                          <div className="hvrbox">
+                            <img src={image} alt={name} className="hvrbox-layer_bottom"/>
+                            <div className="hvrbox-layer_top hvrbox-layer_slidedown">
+		                          <div className="hvrbox-text">{name}</div>
+	                          </div>
+                          </div>
                         </Link>
                       </div>
                     )

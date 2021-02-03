@@ -37,7 +37,7 @@ class CropDetailView(APIView): # extend the APIView
 
     def get(self, _request, pk):
         crop = self.get_crop(pk=pk) # get a crop by id
-        serialized_crop = CropSerializer(crop)
+        serialized_crop = PopulatedCropSerializer(crop)
         return Response(serialized_crop.data, status=status.HTTP_200_OK)  # send the JSON to the client
 
     def put(self, request, pk):

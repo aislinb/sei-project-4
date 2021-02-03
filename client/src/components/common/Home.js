@@ -21,7 +21,7 @@ function Home() {
 
   return (
     <main>
-      <div className="central-body">
+      <div className="home-body">
         <section className="hero-carousel">
           <HeroCarousel interval={3000}>
             <img

@@ -28,9 +28,9 @@
     "pk": 2,
     "fields": {
       "name": "BOURJASOTTE NOIRE FIGS",
-      "binomial_name": "Violette de Solliès",
+      "binomial_name": "Ficus 'Violette de Solliès' ",
       "growing_days": 100,
-      "is_perennial": false,
+      "is_perennial": true,
       "description": "You’ll see figs on the market throughout the year, each variety selected for yield and harvested hard and underripe for ease of transport and an extended shelf life. We only source one variety during their short, natural season, as no other kind matches Bourjasotte Noire for flavour and consistency. We’ve adapted our supply chain to bring in these figs fully ripe, when the fruit has developed its characteristic dense, creamy texture and reached a naturally high concentration of natural sugars.",
       "image": "https://www.natoora.co.uk/img/pages/our-produce/natoora-ourproduce-noir-figd.jpg",
       "tags": [
@@ -51,14 +51,14 @@
     "model": "crops.crop",
     "pk": 3,
     "fields": {
-      "name": "GREEN CITRUS",
-      "binomial_name": "Green Pink Navel, Green Navel, Green Mandarin",
+      "name": "GREEN PINK NAVEL",
+      "binomial_name": "Citrus reticulata",
       "growing_days": 100,
-      "is_perennial": false,
+      "is_perennial": true,
       "description": "Bergamots represented a new way to use citrus. On sourcing trips, we looked again at green-skinned Mandarins and Navel Oranges, technically unripe but full of potential. Citrus juice and zest are at their most potent at this stage, mellowing as developing sugars balance out their fragrant acidity.",
       "image": "https://www.natoora.co.uk/img/pages/our-produce/natoora-greencitrus-banner-preview.jpg",
       "tags": [
-        6, 9
+        3, 4, 6, 9
       ],
       "companions": [
         1
@@ -75,19 +75,19 @@
     "model": "crops.crop",
     "pk": 4,
     "fields": {
-      "name": "GREEN CITRUS",
-      "binomial_name": "Green Pink Navel, Green Navel, Green Mandarin",
+      "name": "WHITE PEACHES FROM CAMPANIA",
+      "binomial_name": "Prunus persica alba",
       "growing_days": 100,
-      "is_perennial": false,
-      "description": "Bergamots represented a new way to use citrus. On sourcing trips, we looked again at green-skinned Mandarins and Navel Oranges, technically unripe but full of potential. Citrus juice and zest are at their most potent at this stage, mellowing as developing sugars balance out their fragrant acidity.",
-      "image": "https://www.natoora.co.uk/img/pages/our-produce/natoora-greencitrus-banner-preview.jpg",
+      "is_perennial": true,
+      "description": "The White Peach that sparked our search at the market was the Greta, the second variety to ripen on Domenico’s orchard. The exceptionally high level of anthocyanins in this variety means that - although still technically a white peach - its flesh is sometimes completely blushed with vibrant reddish purple streaks. Anthocyanins, which are also found in dark, astringent fruits like blueberries, not only cause the flesh to pigment but can also impact the flavour of the fruit, giving these peaches a slight tartness and a unique, almost berry-like aroma.",
+      "image": "https://www.natoora.co.uk/img/pages/our-produce/natoora-whitepeaches-banner-preview.jpg",
       "tags": [
-        6, 9
+        3, 4, 9
       ],
       "companions": [
         1
       ],
-      "sowing_method": "This season the first harvests were slightly smaller than previous years, due to the incredibly high temperatures we’ve seen this summer but nothing else about this exceptional variety has was affected. Near-black, deep red flesh and that perfect balance of sweetness and acidity we’ve come to expect.",
+      "sowing_method": "Handled very carefully from the moment they are harvested, our peaches have to be transported in single layers and checked one by one for any signs of damage on arrival. Rather than compromising on flavour, we have adapted our supply chain so that we can bring Domenico's peaches to the UK with as little handling as possible along the way.",
     "owner": 2,
     "liked_by": [
       1,
@@ -166,7 +166,394 @@
       2
     ]
     }
+  },
+  {
+    "model": "crops.crop",
+    "pk": 8,
+    "fields": {
+      "name": "CUORE DEL VESUVIO TOMATOES",
+      "binomial_name": "S. lycopersicum, Campania",
+      "growing_days": 100,
+      "is_perennial": false,
+      "description": "With Raf, the tell-tale sign is a wide-ridged, flat bottom, clearly identifiable over the pointed, modern hybrid varieties being sold under the same name. Renowned for the remarkable balance between its sweet, crisp flesh and brightly acidic seeds.",
+      "image": "https://www.natoora.co.uk/img/pages/our-produce/natoora-cuoredelvesuvio-banner-preview.jpg",
+      "tags": [
+        2, 4, 5, 7
+      ],
+      "companions": [
+        1
+      ],
+      "sowing_method": "This season the first harvests were slightly smaller than previous years, due to the incredibly high temperatures we’ve seen this summer but nothing else about this exceptional variety has was affected. Near-black, deep red flesh and that perfect balance of sweetness and acidity we’ve come to expect.",
+    "owner": 2,
+    "liked_by": [
+      1,
+      2
+    ]
+    }
+    
+  },
+  {
+    "model": "crops.crop",
+    "pk": 9,
+    "fields": {
+      "name": "POMEGRANATE FROM SICILY",
+      "binomial_name": "Punica granatum",
+      "growing_days": 100,
+      "is_perennial": true,
+      "description": "Originating from the Middle East, pomegranates were not commercially grown in Italy until 2010, when Dino formed a small collective of local farmers dedicated to innovative, high-quality agriculture. Dino couldn’t shake the feeling that the Sicilian climate, with its warm days and cool winter nights, would allow him to grow pomegranates on a large scale.",
+      "image": "https://www.natoora.co.uk/img/pages/our-produce/natoora-pomegranate-banner-preview.png",
+      "tags": [
+        3, 4, 9
+      ],
+      "companions": [
+        1
+      ],
+      "sowing_method": "Deep red seeds with a rich, wine-like flavour. Harvested at their peak, our pomegranates are exceptionally high in sugar, with only a hint of tartness.",
+    "owner": 2,
+    "liked_by": [
+      1,
+      2
+    ]
+    }
+    
+  },
+  {
+    "model": "crops.crop",
+    "pk": 10,
+    "fields": {
+      "name": "YELLOW PEACHES FROM VOLPEDO",
+      "binomial_name": "Prunus persica",
+      "growing_days": 100,
+      "is_perennial": true,
+      "description": "Over the past century, peaches from Volpedo have grown in popularity and are highly prized, owing their fame to both the favourable conditions in which they are grown (a rich soil and mild but very sunny summers) and the skills of the growers, who have specialised in growing peaches, mainly of the yellow cultivars. The Volpedo growers plant varieties renowned for their flavour, even when these require harvesting several times per tree. This more labour intensive cultivation is typically avoided by large commercial growers, to the detriment of the varieties that they then select.",
+      "image": "https://www.natoora.co.uk/img/pages/our-produce/natoora-ourproduce-yellowpeach.jpg",
+      "tags": [
+        3, 4, 9
+      ],
+      "companions": [
+        1
+      ],
+      "sowing_method": "Volpedo Peaches are renowned for their perfect balance of sweet and tart, fragrant aroma and buttery flesh.",
+    "owner": 2,
+    "liked_by": [
+      1,
+      2
+    ]
+    }    
+  },
+  {
+    "model": "crops.crop",
+    "pk": 11,
+    "fields": {
+      "name": "GENOESE BASIL DOP",
+      "binomial_name": "Basilica, Liguria, Italy ",
+      "growing_days": 100,
+      "is_perennial": true,
+      "description": "The Genovese basil variety is exclusively grown in a small area of Liguria and is renowned for its unique perfume, small oval leaves and delicate colour. We source it directly from Paolo, a grower who specialises in DOP basil, based in Celle Ligure. He grows following the strict guidelines for the DOP certification: the plants are hand-picked when still very young, having produced only 4 to 6 tender leaves, giving the perfect balance of taste and a bouquet without any hint of mint. Importantly, the veins, which in larger plants are guilty of imparting bitterness to the leaf, have not yet fully developed.",
+      "image": "https://www.natoora.co.uk/img/pages/our-produce/natoora-ourproduce-basildop.jpg",
+      "tags": [
+        1, 2, 3, 4, 8
+      ],
+      "companions": [
+        1
+      ],
+      "sowing_method": "A light green variety with small oval leaves and an intense perfume with no hint of mint.",
+    "owner": 2,
+    "liked_by": [
+      1,
+      2
+    ]
+    }    
+  },
+  {
+    "model": "crops.crop",
+    "pk": 12,
+    "fields": {
+      "name": "SPANISH AVOCADO",
+      "binomial_name": "Persea americana, Liguria, Italy ",
+      "growing_days": 100,
+      "is_perennial": true,
+      "description": "Over the years our growers have gradually built up their orchards using clonal rootstocks, which can be up to four times more expensive than the industrially-favoured varieties, with a smaller yield. However the quality of fruit these trees produce is a class apart. Drawing more calcium from the soil, our growers’ trees produce fruit with a richer oil content and smaller stone.      Cultivated with minimum intervention, each avocado is individually measured for ripeness and handpicked at full maturity. With us in three days, we can trace each avocado back to a single grower.",
+      "image": "https://www.natoora.co.uk/img/pages/our-produce/Tile-images-avocado.jpg",
+      "tags": [
+        3, 9
+      ],
+      "companions": [
+        1
+      ],
+      "sowing_method": "Hass, Oil-rich, dense flesh.",
+    "owner": 2,
+    "liked_by": [
+      1,
+      2
+    ]
+    }    
+  },
+  {
+    "model": "crops.crop",
+    "pk": 13,
+    "fields": {
+      "name": "BREME ONIONS",
+      "binomial_name": "Allium cepa, Lombardia, Italy ",
+      "growing_days": 100,
+      "is_perennial": false,
+      "description": "Over the years our growers have gradually built up their orchards using clonal rootstocks, which can be up to four times more expensive than the industrially-favoured varieties, with a smaller yield. However the quality of fruit these trees produce is a class apart. Drawing more calcium from the soil, our growers’ trees produce fruit with a richer oil content and smaller stone.      Cultivated with minimum intervention, each avocado is individually measured for ripeness and handpicked at full maturity. With us in three days, we can trace each avocado back to a single grower.",
+      "image": "https://www.natoora.co.uk/img/pages/our-produce/natoora-ourproduce-bremeonion.jpg",
+      "tags": [
+        4
+      ],
+      "companions": [
+        1
+      ],
+      "sowing_method": "The Red Breme onion is extraordinary. Very large, it is also known as 'la dolcissima' ('the sweetest') for its incredible sweet taste. It is very aromatic and pungent, but its main quality has to be the lingering sweetness, which gets even more intense when cooked.",
+    "owner": 2,
+    "liked_by": [
+      1,
+      2
+    ]
+    }    
+  },
+  {
+    "model": "crops.crop",
+    "pk": 14,
+    "fields": {
+      "name": "BABY BLACK AUBERGINE",
+      "binomial_name": "Solancaea, Liguria, Italy ",
+      "growing_days": 100,
+      "is_perennial": true,
+      "description": "The Nile aubergines are a variety typical to Liguria, cultivaed by only a handful of growers lucky enough to have land that provides the right conditions for this vegetable to flourish: achieving a very sweet, intense flavour with a tender and almost seedless pulp. Giovanni grows these aubergines outdoors, on his steep terraced land in Celle Ligure on the North West coast of Italy. The rich soil, a mix of clay and sand, is cultivated using traditional methods: the crops are regularly rotated, giving the land the opportunity to recover all its nutrients, allowing him to use only natural fertilisers.",
+      "image": "https://www.natoora.co.uk/img/pages/our-produce/natoora-ourproduce-babyaubergine.jpg",
+      "tags": [
+        4
+      ],
+      "companions": [
+        1
+      ],
+      "sowing_method": "Testa’s baby black aubergines are characterised by a dense, tender and almost seedless pulp, with no trace of bitterness. With a thin skin, they are perfect even enjoyed raw in a carpaccio.",
+    "owner": 2,
+    "liked_by": [
+      1,
+      2
+    ]
+    }    
+  },
+  {
+    "model": "crops.crop",
+    "pk": 15,
+    "fields": {
+      "name": "BABY BEETROOT",
+      "binomial_name": "Solancaea, Cornwall ",
+      "growing_days": 100,
+      "is_perennial": false,
+      "description": "The baby vegetables we source from Good Earth Growers in Cornwall are the perfect example of how growing practices can profoundly impact on the final flavour. They are organically grown in fields that are cared for by rotating the crops and using natural fertilisers. The vegetables are given minimal water and are left to grow slowly and naturally, without rushing the process and without using pesticides. They are harvested when they reach the desired size, for a tender texture and intense flavour.",
+      "image": "https://www.natoora.co.uk/img/pages/our-produce/natoora-ourproduce-babybeets.jpg",
+      "tags": [
+        10, 3
+      ],
+      "companions": [
+        1
+      ],
+      "sowing_method": "These young, gnarly looking roots are tender, earthy and sweet.",
+    "owner": 2,
+    "liked_by": [
+      1,
+      2
+    ]
+    }    
+  },
+  {
+    "model": "crops.crop",
+    "pk": 16,
+    "fields": {
+      "name": "TROMBETTA COURGETTES",
+      "binomial_name": "Cucurbita moschata 'Tromboncino', Essex ",
+      "growing_days": 100,
+      "is_perennial": false,
+      "description": "A variety typical of Liguria in Northern Italy, prized for its delicate taste reminiscent of squashes.Unlike other courgettes, the Trombetta’s seeds are found in a small bulb at the end of the vegetable, making the flesh seedless and giving it a uniquely compact, crunchy texture. For many years we sourced Trombetta courgettes from growers in Liguria, but due to their delicate nature, it does not tend to travel well. As a result, we looked to create a source closer to home and now work with a grower in Essex. This means we can receive the courgettes the same day they are harvested and after only a short journey to reach us.",
+      "image": "https://www.natoora.co.uk/img/pages/our-produce/natoora-ourproduce-courgette.jpg",
+      "tags": [
+        10, 3
+      ],
+      "companions": [
+        1
+      ],
+      "sowing_method": "These, long, curved and thin courgettes have a delicate squash flavour, but what sets them apart is their very peculiar texture: their seedless flesh is dense and crunchy, retaining a good bite even after cooking.",
+    "owner": 2,
+    "liked_by": [
+      1,
+      2
+    ]
+    }    
+  },
+  {
+    "model": "crops.crop",
+    "pk": 17,
+    "fields": {
+      "name": "SUNSWEET MELONS, MANTUA",
+      "binomial_name": "Cucurbita moschata 'Tromboncino', Essex ",
+      "growing_days": 100,
+      "is_perennial": true,
+      "description": "The Sun Sweet is a relatively new variety of Cantaloupe melon characterised by consistently dense, sugar-laden flesh and honeyed flavour. It is grown by the Zerbinati family in Mantua, Northern Italy, an area renowned for its melon growing. The family is one of the most celebrated producers in Italy, sharing Natoora’s belief in putting flavour first. Each stage of the Sun Sweet Melon growing is carefully managed to maximise flavour:",
+      "image": "https://www.natoora.co.uk/img/pages/our-produce/melon-image-360x219px.jpg",
+      "tags": [
+        3, 4, 9
+      ],
+      "companions": [
+        1
+      ],
+      "sowing_method": "Sun Sweet melons are rough-skinned, with a compact yet buttery flesh. Deep orange in colour, the flesh is also intensely sweet and exudes a rich aroma.",
+    "owner": 2,
+    "liked_by": [
+      1,
+      2
+    ]
+    }    
+  },
+  {
+    "model": "crops.crop",
+    "pk": 18,
+    "fields": {
+      "name": "LIGURIAN BULL'S HEART TOMATO",
+      "binomial_name": "S. lycopersicum, Campania",
+      "growing_days": 100,
+      "is_perennial": false,
+      "description": "These tomatoes are fairly small compared to other Bull’s Hearts, with a characteristic heart shape and a deep red colour which is rarely found in other varieties. The pulp is compact, with few seeds and a clean tomato flavour, enhanced by a good acidity.",
+      "image": "https://www.natoora.co.uk/img/pages/our-produce/natoora-ourproduce-bullshearttomato.jpg",
+      "tags": [
+        2, 4, 5, 7
+      ],
+      "companions": [
+        1
+      ],
+      "sowing_method": "With a vibrant red colour, small size and heart shape, they stand out for their deep, clean tomato flavour with a good acidity; their pulp is compact and almost seedless.",
+    "owner": 2,
+    "liked_by": [
+      1,
+      2
+    ]
+    }    
+  },
+  {
+    "model": "crops.crop",
+    "pk": 19,
+    "fields": {
+      "name": "HEIRLOOM TOMATOES FROM ESSEX",
+      "binomial_name": "S. lycopersicum, Campania",
+      "growing_days": 100,
+      "is_perennial": false,
+      "description": "These tomatoes are fairly small compared to other Bull’s Hearts, with a characteristic heart shape and a deep red colour which is rarely found in other varieties. The pulp is compact, with few seeds and a clean tomato flavour, enhanced by a good acidity.",
+      "image": "https://www.natoora.co.uk/img/pages/our-produce/natoora-ourproduce-heirloomtomato.jpg",
+      "tags": [
+        2, 4, 5, 7
+      ],
+      "companions": [
+        1
+      ],
+      "sowing_method": "With a vibrant red colour, small size and heart shape, they stand out for their deep, clean tomato flavour with a good acidity; their pulp is compact and almost seedless.",
+    "owner": 2,
+    "liked_by": [
+      1,
+      2
+    ]
+    }    
+  },
+  {
+    "model": "crops.crop",
+    "pk": 20,
+    "fields": {
+      "name": "COLLARD GREENS FROM CORNWALL",
+      "binomial_name": "S. lycopersicum, Campania",
+      "growing_days": 100,
+      "is_perennial": false,
+      "description": "Usually associated with soul food, collard greens evoke a dreamy stillness, a languorous story told in a strong Deep South drawl. However, they originated in the Eastern Mediterranean and only travelled to the cotton states of America centuries later. Their story is in part shaped by the brutalities of the slave trade: on plantations, collard greens were one of the few vegetables that African slaves were allowed to grow for themselves.",
+      "image": "https://www.natoora.co.uk/img/pages/our-produce/natoora-collard-greens-banner-preview.jpg",
+      "tags": [
+        8
+      ],
+      "companions": [
+        1
+      ],
+      "sowing_method": "Collard greens have a slightly bitter, alkaline taste, tempered by sweeter white veins.",
+    "owner": 2,
+    "liked_by": [
+      1,
+      2
+    ]
+    }    
+  },
+  {
+    "model": "crops.crop",
+    "pk": 21,
+    "fields": {
+      "name": "DELICA PUMPKIN FROM LOMBARDY",
+      "binomial_name": "Cucurbita maxima",
+      "growing_days": 100,
+      "is_perennial": false,
+      "description": "Delica pumpkins are squat and irregular, each presenting a completely unique landscape of scarred, green-grey skin. Yet this lack of conformity is only skin-deep; when grown correctly, these pumpkins have a depth of flavour that consistently sets them apart. Beneath each gnarly rind, we find densely packed, vibrant flesh that smells distinctly sweet and stays firm once cooked.",
+      "image": "https://www.natoora.co.uk/img/pages/our-produce/natoora-delica-pumpkin-banner-preview.jpg",
+      "tags": [
+        3, 4, 11
+      ],
+      "companions": [
+        1
+      ],
+      "sowing_method": "Delica Pumpkins have dense, vividly orange flesh that caramelises easily due to its high sugar content. They have an intense, buttery flavour.",
+    "owner": 2,
+    "liked_by": [
+      1,
+      2
+    ]
+    }    
+  },
+  {
+    "model": "crops.crop",
+    "pk": 22,
+    "fields": {
+      "name": "REINE CLAUDE DORÉE PLUMS",
+      "binomial_name": "Prunus domestica",
+      "growing_days": 100,
+      "is_perennial": true,
+      "description": "The Reine Claude Dorée is a French variety of plum dating back to the sixteenth century. It was later imported to Britain, and it is believed all local varieties of greengage can trace their origins back to the Reine Claude Dorée. What sets it apart is a truly fragrant, extra sweet flesh with just the right amount of tartness and an attractive green to golden, and even red skin.",
+      "image": "https://www.natoora.co.uk/img/pages/our-produce/natoora-ourproduce-plums.jpg",
+      "tags": [
+        9
+      ],
+      "companions": [
+        1
+      ],
+      "sowing_method": "Reine Claude Dorée plums are incredibly attractive with their green to golden skin, sometimes blushed with red. Quite firm on appearance, they prove juicy and syrupy once bitten into; The flesh is deep yellow and sugar laden, with just the right amount of acidity.",
+    "owner": 2,
+    "liked_by": [
+      1,
+      2
+    ]
+    }    
+  },
+  {
+    "model": "crops.crop",
+    "pk": 23,
+    "fields": {
+      "name": "BERGAMOT FROM CALABRIA",
+      "binomial_name": "Citrus bergamia",
+      "growing_days": 100,
+      "is_perennial": true,
+      "description": "Scratch the skin and a familiar scent erupts from the fine spray delivered by the finger's nick. It stirs a memory. But, unlike most fondly remembered aromas emanating from a food, it does not recall a meal eaten on holiday abroad, or the cooking of a grandparent. Once recognised, just how prized the essence of this fruit is becomes abundantly clear, for its oil forms the base of so many perfumes (at least one third of all fragrances contain bergamot) and its essence is one of the main ingredients in Earl Grey tea. Its predominant use is in the cosmetics industry rather than culinary. That familiar smell is almost certainly reminiscent of a perfume, or its one time wearer.",
+      "image": "https://www.natoora.co.uk/img/pages/our-produce/natoora-bergamot-banner-preview.jpg",
+      "tags": [
+        4, 6, 9
+      ],
+      "companions": [
+        1
+      ],
+      "sowing_method": "The bergamot is an intensely perfumed citrus fruit. Its skin is full of essential oils that give out floral, uplifting, crisp aromas. Its pulp is sour, acidic and slightly bitter.",
+    "owner": 2,
+    "liked_by": [
+      1,
+      2
+    ]
+    }    
   }
+
   
 
 ]

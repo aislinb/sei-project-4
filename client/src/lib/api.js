@@ -62,3 +62,11 @@ export function createCropComment(formdata, id) {
 export function deleteCropComment(id, commentId) {
   return axios.delete(`${baseUrl}/crops/${id}/comments/${commentId}`, headers())
 }
+
+export function getAllComments() {
+  return axios.get(`${baseUrl}/comments/`)
+}
+
+export function getSingleComment(id) {
+  return axios.get(`${baseUrl}/comments/${id}/`)
+}
