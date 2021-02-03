@@ -3,6 +3,7 @@ import { getAllCrops } from '../../lib/api'
 import { Link } from 'react-router-dom'
 import { isAuthenticated } from '../../lib/auth'
 import Select from 'react-select'
+import { getAllCropTags } from '../../lib/api'
 
 import RingLoader from 'react-spinners/RingLoader'
 
@@ -29,6 +30,23 @@ function CropIndex() {
     
   }, [])
 
+  const [tags, setTags] = React.useState([])
+
+  
+
+  React.useEffect(() => {
+    const getData = async () => {
+      try {
+        const { data } = await getAllCropTags()
+        setTags(data)
+      } catch (err) {
+        console.log(err)
+      }
+    }
+    getData()
+  }, [])
+
+
   return (
     <main>
       <div className="flex-div central-body index-page">
@@ -40,9 +58,10 @@ function CropIndex() {
         <div className="index-header">
           <p>We know the seed, soil and season of everything we source. Each of our radically seasonal fruits and vegetables has its own unique story of craftsmanship which elevates it above the monotonous landscape of industrially-cultivated, year-round produce.</p>
           {isAuthenticated ? 
-            <Link to="/crops/new/"><button className="link-button" >
-              Add a Crop
-            </button></Link>
+            <div className="add-button">
+              <p>As a member of our community, are you growing something that is not on the list yet?</p>
+              <Link to="/crops/new/"><a className="button is-dark add-own">ADD YOUR OWN</a></Link>
+            </div>
             :
             <h6></h6>
           }
@@ -52,6 +71,7 @@ function CropIndex() {
               <div>
                 <Select 
                   placeholder="Select a category..."
+                  options={tags}
                 />
               </div>
               <div className="crops-wrapper">

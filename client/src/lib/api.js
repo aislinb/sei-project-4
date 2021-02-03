@@ -31,6 +31,12 @@ export function editCrop(id, formdata) {
   return axios.put(`${baseUrl}/crops/${id}`, formdata, headers())
 }
 
+// Crop Tags 
+
+export function getAllCropTags() {
+  return axios.get(`${baseUrl}/crop_tags/`)
+}
+
 // * Auth Requests
 
 export function registerUser(formdata) {
@@ -56,7 +62,7 @@ export function getAllUsers() {
 // COMMENTS : add, delete, view all comments. also crop tags and companion groups
 
 export function createCropComment(formdata, id) {
-  return axios.post(`${baseUrl}/crops/${id}/comments/`, formdata, headers())
+  return axios.post(`${baseUrl}/comments/`, formdata, headers(), id)
 }
 
 export function deleteCropComment(id, commentId) {

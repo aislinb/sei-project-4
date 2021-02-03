@@ -8,6 +8,7 @@ import CropIndex from './components/crops/CropIndex'
 import CropNew from './components/crops/CropNew'
 import CropShow from './components/crops/CropShow'
 import ProfileShow from './components/user/ProfileShow'
+import ProfileEdit from './components/user/ProfileEdit'
 
 import About from './components/filler_pages/About'
 import Contact from './components/filler_pages/Contact'
@@ -29,6 +30,7 @@ function App() {
         <Route path="/register/" component={Register} />
         <Route path="/login/" component={Login} />
         <Route path="/profile/" component={ProfileShow} />
+        <Route path="/update-profile/" component={ProfileEdit} />
         <Route path="/about-us/" component={About} />
         <Route path="/contact-us/" component={Contact} />
       </Switch>

@@ -33,7 +33,7 @@ function Register() {
         <section className="section register-page">
           <form className="register-form" onSubmit={handleSubmit}>
             <div className="block-form">
-              <h1>Sign up!</h1>
+              <h1>SIGN UP</h1>
               <label className="block-form">Username:</label>
               <input
                 className="block-form"
@@ -101,7 +101,7 @@ function Register() {
             </div>
             {errors.password && <p className="error-in-form error-message">{errors.password}</p>}
             <div className="block-form">
-              <label className="block-form">Password Confirmation:</label>
+              <label className="block-form">Confirm Password:</label>
               <div className="control">
                 <input
                   type="password"
@@ -118,7 +118,7 @@ function Register() {
               <button type="submit" className="block-form form-submit-button">Register</button>
             </div>
             <div className="block-form account-already">
-            Already have an account? <Link to="/login/">Log In.</Link>
+            Already have an account? <Link to="/login/">LOG IN.</Link>
             </div>
           </form>
         </section>

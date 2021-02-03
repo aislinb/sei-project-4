@@ -13,7 +13,7 @@ function CropShow() {
 
   const { formdata, handleChange, errors, setErrors  } = useForm({
     text: '', 
-    owner: {}
+    crop: 1
   })
 
   const history = useHistory()
@@ -63,13 +63,15 @@ function CropShow() {
 
 
   // // * Submit Reviews
-  const handleSubmit = async (e) => {
-    e.preventDefault()
+  const handleSubmit = async (event) => {
+    event.preventDefault()
     try {
-      await createCropComment(formdata, crop.id)
+      console.log(formdata)
+      await createCropComment(formdata)
       const { data } = await getSingleCrop(id)
       setCrop(data)
       formdata.text = ''
+      crop.id = ''
       console.log(formdata)
     } catch (err) {
       setErrors(err.response.data.errors)
@@ -94,7 +96,7 @@ function CropShow() {
                 <p>no tags</p>
                 :
                 tags.map(tag => {
-                  return <div key={tag.id} className="tag">{tag.name}</div>
+                  return <div key={tag.id} className="tag"><Link to={`${tag.id}/crops-in-tag/`}>{tag.name}</Link></div>
                 })
               }              
               <p></p>
@@ -104,9 +106,9 @@ function CropShow() {
             </div>
             <div className="owner-buttons">
               {crop.owner && crop ?
-                isOwner(crop.owner._id) && 
+                isOwner(crop.owner.id) && 
                 <div>
-                  <Link to={`${crop._id}/edit/`}><button className="edit-btn">Edit</button></Link>
+                  <Link to={`${crop.id}/edit/`}><button className="edit-btn">Edit</button></Link>
                   <button className="delete-btn" onClick={handleDelete}>Delete</button>
                 </div>
                 :
@@ -118,7 +120,7 @@ function CropShow() {
                 <div className="comments">
                   <form onSubmit={handleSubmit}>
                     <div>
-                      <label>Write Your Review</label>
+                      <label>Leave a comment if you are growing this variety</label>
                     </div>
                     <textarea
                       className="block-form" {...`input ${errors.text ? 'error-in-form' : ''}`}

@@ -33,6 +33,18 @@ main {
   max-width: 1270px center;
 }
 
+.index-page {
+
+  .all-crops {
+    color: white;
+    text-decoration: white;
+    text-emphasis: heavy;
+
+  }
+  
+
+}
+
 
 .footer {
   position: fixed;
@@ -76,7 +88,7 @@ main {
   .logo-image{
     
     margin-top: 10px;
-    padding-left: 5px;
+    padding-left: 35px;
 }
   
 }
@@ -139,6 +151,22 @@ main {
   h1 {
     font-size: 25px;
     margin-bottom: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .block-form {
+    margin-top: 10px;
+  }
+
+  button {
+    align-items: center;
+    display: center;
+  }
+
+  .account-already {
+    font-size: 12px;
+    align-items: center;
   }
   
 }
@@ -150,6 +178,8 @@ main {
   h1 {
     font-size: 25px;
     margin-bottom: 10px;
+    text-align: center;
+    margin-bottom: 20px;
   }
 
   p {
@@ -161,6 +191,10 @@ main {
     margin: 10px;
   }
 
+  button {
+    align-items: center;
+  }
+
 }
 
 .register-form {
@@ -169,6 +203,10 @@ main {
   .block-form {
     width: 100%;
     margin-bottom: 5px;
+  }
+
+  input {
+    padding: 5px;
   }
 
 }
@@ -220,6 +258,17 @@ main {
     }
   }
 
+  .add-button {
+    margin-bottom: 20px;
+    align-items: center;
+
+    .link-button .add-own {
+      align-items: center;
+      text-align: center;
+    }
+    
+  }
+
   // .all-crops {
   //   display: flex;
   //   flex-direction: column;
@@ -230,6 +279,7 @@ main {
   .crops-wrapper {
     // width: 90%;
     display: flex;
+    magrin-top: 10px;
 
     .index-list {
       display: flex;
@@ -241,6 +291,7 @@ main {
     .index-item {
       width: 33.33%;
       height: width;
+      color: white;
     }
 
     // img {
@@ -266,38 +317,62 @@ main {
 
 // CONTACT / ABOUT
 
-.flex-div-about {
+
+.contact-page {
   display: flex;
-  width: 90%;
+  flex-direction: column;
+  width: 70%;
+
+  .top-banner {
+    display: flex;
+  }
+  .below-banner {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+  }
+
+  .index-header {
+    display: flex;
+    height: 100px;
+  }
+
+  .form-heading {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 300px;
+  }
+
+  .stores {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    width: 33.3%;
+
+    .stores-item {
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      justify-content: space-around;
+      margin-bottom: 20px;
+      height: auto;
+      font-size: 15;
+
+      h1 {
+        text-emphasis: bold;
+        padding: 15px 0 15px 0;
+      }
+
+      p {
+        padding: 10px 0;
+      }
+    }
+  }
 }
-
-// .stores {
-//   display: flex;
-//   flex-direction: row;
-//   flex-wrap: wrap;
-//   justify-content: space-around;
-//   margin-top: 20px;
-//   width: 33.3%;
-
-//   .stores-item {
-//     display: flex;
-//     flex-direction: column;
-//     width: 40%;
-//     justify-content: space-around;
-//     margin-bottom: 20px;
-//     height: auto;
-//     font-size: 15;
-
-//     h1 {
-//       text-emphasis: bold;
-//       padding: 15px 0 15px 0;
-//     }
-
-//     p {
-//       padding: 10px 0;
-//     }
-//   }
-// }
 
 
 //media queries for index pages

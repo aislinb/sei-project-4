@@ -1,8 +1,24 @@
 import React from 'react'
-
+import { getAllCropTags } from '../../lib/api'
 
 function CropForm({ handleChange, handleSubmit, formdata, errors }) {
+  const [tags, setTags] = React.useState([])
+
   
+
+  React.useEffect(() => {
+    const getData = async () => {
+      try {
+        const { data } = await getAllCropTags()
+        setTags(data)
+      } catch (err) {
+        console.log(err)
+      }
+    }
+    getData()
+  }, [])
+
+  console.log('Errors: ', errors)
   
   return (
     <form className="add-crop-form" onSubmit={handleSubmit}>
@@ -98,9 +114,18 @@ function CropForm({ handleChange, handleSubmit, formdata, errors }) {
       <select className="block-form"
         onChange={handleChange} 
         name="tags"
-        value={formdata.tags}
+        value={formdata.venue}
       >
-        <option disabled>Add tags</option>
+        <option disabled>Select a tag</option>
+        {tags ?
+          tags.map(tag => {
+            return (
+              <option key={tag.id} value={tag.id}>{tag.name}</option>
+            )
+          })
+          :
+          <option>No options available</option>
+        }
       </select>
       <button type="submit" className="submit-btn">Submit</button>
     </form>

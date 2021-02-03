@@ -35,7 +35,7 @@ function Login() {
         <section className="section login-page">
           <form className="register-form" onSubmit={handleSubmit}>
             <div className="block-form">
-              <h1>Login here</h1>
+              <h1>LOGIN HERE</h1>
               <label className="block-form">Email:</label>
               <input
                 className="block-form"
