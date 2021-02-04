@@ -43,7 +43,7 @@ function CropNew() {
           </figure>
         </div>
         <div className="flex-div">
-          <h1 className="form-heading">Add one of your favourite crops to grow</h1>
+          <h1 className="form-heading">Let us know what you&apos;ve been enjoying growing, recently...</h1>
           <CropForm 
             handleChange={handleChange}
             handleSubmit={handleSubmit}

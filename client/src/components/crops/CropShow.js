@@ -3,6 +3,8 @@ import { getSingleCrop, deleteCrop, createCropComment } from '../../lib/api'
 import useForm from '../../utils/useForm'
 import { isOwner, isAuthenticated } from '../../lib/auth'
 
+
+import profilePlaceholder from '../../images/profile-placeholder.jpg'
 import { useParams, Link, useHistory } from 'react-router-dom'
 
 function CropShow() {
@@ -136,6 +138,40 @@ function CropShow() {
                 :
                 <h2><Link to='/register/'>Register</Link> or <Link to='/login/'>Login</Link> to leave a review!</h2>
               }
+            </div>
+            <div className="reviews-and-ratings-wrapper">
+              <section className="reviews">
+                {crop && crop.comments && crop.comments.length > 0 ?
+                  <div>
+                    <h3>Reviews:</h3>
+                    {crop.comments.map(comment => {
+                      return (
+                        <div key={comment.id} className="review">
+                          <h5>{comment.owner.username}</h5>
+                          <p>{comment.text}</p>
+                          <div className="avatar">
+                            {comment.owner.userImage ? 
+                              <img src={comment.owner.userImage} alt="profile pic" />
+                              :
+                              <img src={profilePlaceholder} alt="profile pic" />
+                            }
+                          </div>
+                          
+                          {isOwner(comment.owner._id) && 
+                        <button className="delete-btn">Delete</button>
+                          }                   
+                        </div>
+                      )
+                    }
+                    )}
+                  </div>
+                  :
+                  <div>
+                    <h3>Reviews:</h3>
+                    <p>Be the first to review this event!</p>
+                  </div>
+                }
+              </section>
             </div>
           </div>
           

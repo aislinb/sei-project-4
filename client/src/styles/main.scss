@@ -128,17 +128,29 @@ main {
     .add-crop-form {
       display: flex;
       flex-direction: column;
-      .block-form {
-        // display: flex;
-        // flex-direction: column;
-      }
+      
+    }
+
+    .block-form {
+      margin: 5px;
+    }
+
+    .select .text-area .input {
+      padding: 5px 0 5px 0;
+    }
+
+    .submit-btn {
+      margin-top: 20px;
     }
 
   }
 
-  // .add-crop-form {
-
-  // }
+  .form-heading {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: -5px;
+  }
 }
 
 // AUTH 
@@ -279,7 +291,7 @@ main {
   .crops-wrapper {
     // width: 90%;
     display: flex;
-    magrin-top: 10px;
+    margin-top: 10px;
 
     .index-list {
       display: flex;
@@ -373,6 +385,27 @@ main {
     }
   }
 }
+
+// CROP SHOW
+
+  .crop-show-flex {
+
+    h1 {
+      font-size: 40px;
+    }
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+
+    .comments-srea {
+      display: flex;
+    }
+
+    // .img {
+    //   width: 20vh;
+    //   height: 20px;
+    // }
+  }
 
 
 //media queries for index pages

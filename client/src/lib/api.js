@@ -24,11 +24,11 @@ export function createCrop(formdata) {
 }
 
 export function deleteCrop(id) {
-  return axios.delete(`${baseUrl}/crops/${id}`, headers())
+  return axios.delete(`${baseUrl}/crops/${id}/`, headers())
 }
 
 export function editCrop(id, formdata) {
-  return axios.put(`${baseUrl}/crops/${id}`, formdata, headers())
+  return axios.put(`${baseUrl}/crops/${id}/`, formdata, headers())
 }
 
 // Crop Tags 
@@ -66,7 +66,7 @@ export function createCropComment(formdata, id) {
 }
 
 export function deleteCropComment(id, commentId) {
-  return axios.delete(`${baseUrl}/crops/${id}/comments/${commentId}`, headers())
+  return axios.delete(`${baseUrl}/crops/${id}/comments/${commentId}/`, headers())
 }
 
 export function getAllComments() {
