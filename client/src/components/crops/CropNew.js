@@ -27,7 +27,7 @@ function CropNew() {
       console.log(formdata)
       const { data } = await createCrop(formdata)
       
-      history.push(`/crops/${data.id}`)
+      history.push(`/crops/${data.id}/`)
     } catch (err) {
       setErrors(err.response.data.errors)
     }

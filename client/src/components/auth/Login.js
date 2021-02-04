@@ -65,7 +65,7 @@ function Login() {
             <div className="block-form">
               <p className="or">or</p>
             </div>
-            <Link to="/register/">
+            <Link to="/register">
               <div className="block-form">
                 <button className="block-form">Create New Account</button>
               </div>

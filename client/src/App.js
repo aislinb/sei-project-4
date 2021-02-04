@@ -24,15 +24,15 @@ function App() {
       <Nav />
       <Switch>
         <Route exact path="/" component={Home}/>
-        <Route path="/crops/new/" component={CropNew} />
-        <Route path="/crops/:id/" component={CropShow} />
-        <Route path="/crops/" component={CropIndex} />
-        <Route path="/register/" component={Register} />
-        <Route path="/login/" component={Login} />
-        <Route path="/profile/" component={ProfileShow} />
-        <Route path="/update-profile/" component={ProfileEdit} />
-        <Route path="/about-us/" component={About} />
-        <Route path="/contact-us/" component={Contact} />
+        <Route path="/crops/new" component={CropNew} />
+        <Route path="/crops/:id" component={CropShow} />
+        <Route path="/crops" component={CropIndex} />
+        <Route path="/register" component={Register} />
+        <Route path="/login" component={Login} />
+        <Route path="/profile" component={ProfileShow} />
+        <Route path="/update-profile" component={ProfileEdit} />
+        <Route path="/about-us" component={About} />
+        <Route path="/contact-us" component={Contact} />
       </Switch>
       <Footer />
     </BrowserRouter>

@@ -22,7 +22,7 @@ function Register() {
     try {
       console.log(formdata)
       await registerUser(formdata)
-      history.push('/login/') // if registration successful => login
+      history.push('/login') // if registration successful => login
     } catch (err) {
       setErrors(err.response.data.errors)
     }
@@ -118,7 +118,7 @@ function Register() {
               <button type="submit" className="block-form form-submit-button">Register</button>
             </div>
             <div className="block-form account-already">
-            Already have an account? <Link to="/login/">LOG IN.</Link>
+            Already have an account? <Link to="/login">LOG IN.</Link>
             </div>
           </form>
         </section>

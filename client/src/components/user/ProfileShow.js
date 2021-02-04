@@ -88,8 +88,8 @@ function profileShow() {
                 <div className="block-form full-width">
                   <h4>Crops you have created:</h4>
                   {user && crops ? 
-                    crops.map(event => {
-                      if (event.owner._id === user._id) {
+                    crops.map(crop => {
+                      if (crop.owner._id === user._id) {
                         return (
                           <>
                             <div><Link to={`/crops/${crops._id}`}>{crops.name}</Link></div>
@@ -104,7 +104,7 @@ function profileShow() {
                 </div>
                 <div className="block-form full-width">
                   <button className="edit-btn">
-                    <Link to={'/update-profile/'} className="edit-button">Edit my profile</Link>
+                    <Link to={'/update-profile'} className="edit-button">Edit my profile</Link>
                   </button>
                   <button className="nav-button" onClick={handleLogout}>Log Out</button>
                 </div>
@@ -114,7 +114,7 @@ function profileShow() {
           :
           <div className="profile-container please-login">
             <button>
-          Please <Link to="/login/">Log in</Link> to access this page
+          Please <Link to="/login">Log in</Link> to access this page
             </button>
           </div>
         }

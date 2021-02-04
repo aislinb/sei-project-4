@@ -16,7 +16,7 @@ export function getAllCrops() {
 }
 
 export function getSingleCrop(id) {
-  return axios.get(`${baseUrl}/crops/${id}`)
+  return axios.get(`${baseUrl}/crops/${id}/`)
 }
 
 export function createCrop(formdata) {

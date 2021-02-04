@@ -43,20 +43,20 @@ function Nav() {
           </div>
           <div className={`navbar-menu ${isOpen ? 'is-active' : ''}`}>
             <div className="navbar-start">
-              <Link to="/crops/" className="navbar-item"><strong>FARMING</strong></Link>
-              <Link to="/crops/new/" className="navbar-item"><strong>COMMUNITY</strong></Link>
-              <Link to="/about-us/" className="navbar-item"><strong>ABOUT US</strong></Link>
-              <Link to="/contact-us/" className="navbar-item"><strong>CONTACT US</strong></Link>
+              <Link to="/crops" className="navbar-item"><strong>FARMING</strong></Link>
+              <Link to="/crops/new" className="navbar-item"><strong>COMMUNITY</strong></Link>
+              <Link to="/about-us" className="navbar-item"><strong>ABOUT US</strong></Link>
+              <Link to="/contact-us" className="navbar-item"><strong>CONTACT US</strong></Link>
             </div>
             <div className="navbar-end">
               <div className="navbar-item">
                 {!isLoggedIn ?
                   <>
                     <div className="buttons">
-                      <Link className="button" to="/register/">
+                      <Link className="button" to="/register">
                       REGISTER
                       </Link>
-                      <Link className="button" to="/login/">
+                      <Link className="button" to="/login">
                       LOG IN
                       </Link>
                     </div>
@@ -64,7 +64,7 @@ function Nav() {
                   :
                   <>
                     <div className="buttons">
-                      <Link to="/profile/">
+                      <Link to="/profile">
                         <button className="nav-button">MY PROFILE</button>
                       </Link>
                       <button className="nav-button" onClick={handleLogout}>LOG OUT</button>

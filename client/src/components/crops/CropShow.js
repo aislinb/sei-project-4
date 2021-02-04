@@ -44,7 +44,7 @@ function CropShow() {
   const handleDelete = async () => {
     try {
       await deleteCrop(id)
-      history.push('/crops/')
+      history.push('/crops')
     } catch (err) {
       console.log(err)
     }
@@ -98,7 +98,7 @@ function CropShow() {
                 <p>no tags</p>
                 :
                 tags.map(tag => {
-                  return <div key={tag.id} className="tag"><Link to={`${tag.id}/crops-in-tag/`}>{tag.name}</Link></div>
+                  return <div key={tag.id} className="tag"><Link to={`${tag.id}/crops-in-tag`}>{tag.name}</Link></div>
                 })
               }              
               <p></p>
@@ -136,7 +136,7 @@ function CropShow() {
                   </form>
                 </div>
                 :
-                <h2><Link to='/register/'>Register</Link> or <Link to='/login/'>Login</Link> to leave a review!</h2>
+                <h2><Link to='/register'>Register</Link> or <Link to='/login'>Login</Link> to leave a review!</h2>
               }
             </div>
             <div className="reviews-and-ratings-wrapper">
