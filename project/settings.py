@@ -11,10 +11,12 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 import django_on_heroku
 import os
+
 from pathlib import Path
 from dotenv import load_dotenv
 import dj_database_url
 load_dotenv()
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -158,5 +160,3 @@ STATICFILES_DIRS = (
 )
 
 django_on_heroku.settings(locals())
-
-
