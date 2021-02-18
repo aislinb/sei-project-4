@@ -31,48 +31,48 @@ function Login() {
 
   return (
     <main>
-      <div className="flex-div central-body">
-        <section className="section login-page">
-          <form className="register-form" onSubmit={handleSubmit}>
-            <div className="block-form">
-              <h1>LOGIN HERE</h1>
-              <label className="block-form">Email:</label>
-              <input
-                className="block-form"
-                placeholder="Email"
-                onChange={handleChange}
-                name="email"
-                value={formdata.email}
-                onFocus={handleFocus}
-              />
-            </div>
-            <div className="field">
-              <label className="block-form">Password:</label>
-              <input
-                type="password"
-                className="block-form"
-                placeholder="Password"
-                onChange={handleChange}
-                name="password"
-                value={formdata.password}
-                onFocus={handleFocus}
-              />
-              {error && <p className="error-in-form">Sorry, your username or password are incorrect</p>}
-            </div>
-            <div className="block-form">
-              <button type="submit" className="block-form form-submit-button">Log In</button>
-            </div>
-            <div className="block-form">
-              <p className="or">or</p>
-            </div>
-            <Link to="/register">
+      <section className="section central-body register-page">
+        <div className="container">
+          <div className="columns">
+            <form className="register-form column is-half is-offset-one-quarter box" onSubmit={handleSubmit}>
               <div className="block-form">
-                <button className="block-form">Create New Account</button>
+                <h1>LOGIN HERE</h1>
+                <input
+                  className="block-form"
+                  placeholder="Email Address"
+                  onChange={handleChange}
+                  name="email"
+                  value={formdata.email}
+                  onFocus={handleFocus}
+                />
               </div>
-            </Link>
-          </form>
-        </section>
-      </div>
+              <div className="field">
+                <input
+                  type="password"
+                  className="block-form"
+                  placeholder="Password"
+                  onChange={handleChange}
+                  name="password"
+                  value={formdata.password}
+                  onFocus={handleFocus}
+                />
+                {error && <p className="login-error error-in-form error-message">Sorry, your username or password are incorrect</p>}
+              </div>
+              <div className="block-form field login-button">
+                <button type="submit" className="block-form button is-fullwidth form-submit-button">Log In</button>
+              </div>
+              <div className="block-form">
+                <p className="or">or</p>
+              </div>
+              <Link to="/register">
+                <div className="block-form field">
+                  <button className="block-form button is-fullwidth form-submit-button">Create New Account</button>
+                </div>
+              </Link>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
   )
 }

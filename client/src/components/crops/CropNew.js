@@ -29,29 +29,27 @@ function CropNew() {
       
       history.push(`/crops/${data.id}/`)
     } catch (err) {
-      setErrors(err.response.data.errors)
+      setErrors(err.response.data)
     }
   }
 
 
   return (
     <main>
-      <div className="flex-div central-body new-crop">
-        <div className="top-banner">
-          <figure>
-            <img src="https://www.natoora.co.uk/img/pages/our-produce/natoora-ourproduce-banner.jpg" alt="banner-image" />
-          </figure>
+      <section className="section central-body register-page">
+        <div className="container">
+          <div className="columns new-form-flex">
+            
+            <h1 className="form-heading">Let us know what you&apos;ve been enjoying growing, recently...</h1>
+            <CropForm 
+              handleChange={handleChange}
+              handleSubmit={handleSubmit}
+              formdata={formdata}
+              errors={errors}
+            />
+          </div>
         </div>
-        <div className="flex-div">
-          <h1 className="form-heading">Let us know what you&apos;ve been enjoying growing, recently...</h1>
-          <CropForm 
-            handleChange={handleChange}
-            handleSubmit={handleSubmit}
-            formdata={formdata}
-            errors={errors}
-          />
-        </div>
-      </div>
+      </section>
     </main>
   )
 }

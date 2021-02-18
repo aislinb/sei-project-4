@@ -1,5 +1,5 @@
 import React from 'react'
-import { getSingleCrop, deleteCrop, createCropComment } from '../../lib/api'
+import { getSingleCrop, deleteCrop, createCropComment, deleteCropComment, showUserProfile } from '../../lib/api'
 import useForm from '../../utils/useForm'
 import { isOwner, isAuthenticated } from '../../lib/auth'
 
@@ -10,12 +10,12 @@ import { useParams, Link, useHistory } from 'react-router-dom'
 function CropShow() {
 
   const [crop, setCrop] = React.useState([])
-
   const isLoggedIn = isAuthenticated()
+  
 
   const { formdata, handleChange, errors, setErrors  } = useForm({
     text: '', 
-    crop: 1
+    crop: {}
   })
 
   const history = useHistory()
@@ -36,9 +36,28 @@ function CropShow() {
   console.log(crop)
 
   // De-structured fields from the crop dictionary:
-  const { name, binomialName, description, image, tags } = crop
-  console.log(crop)
+  const { name, binomialName, description, image, tags, comments } = crop
+  console.log(crop, comments)
   console.log(tags)
+
+  // GET USER
+
+  const [user, setUser] = React.useState('')
+
+  React.useEffect(() => {
+
+    const getData = async () => {
+      try {
+        const { data } = await showUserProfile(id)
+        setUser(data)
+      } catch (err) {
+        console.log(err)
+      }
+    }
+    getData()
+  }, [id])
+
+
 
   // ! DELETE Function
   const handleDelete = async () => {
@@ -53,15 +72,15 @@ function CropShow() {
   
 
   // // COMMENTS
-  // const handleCommentDelete = async (commentId) => {
-  //   try {
-  //     await deleteCropComment(id, commentId)
-  //     const { data } = await getSingleCrop(id)
-  //     setCrop(data)
-  //   } catch (err) {
-  //     console.log(err)
-  //   }
-  // }
+  const handleCommentDelete = async (commentId) => {
+    try {
+      await deleteCropComment(id, commentId)
+      const { data } = await getSingleCrop(id)
+      setCrop(data)
+    } catch (err) {
+      console.log(err)
+    }
+  }
 
 
   // // * Submit Reviews
@@ -82,6 +101,7 @@ function CropShow() {
   console.log(crop.tags)
   console.log(tags)
 
+  console.log(`DEtails of logged in person: ${crop.owner}`)
 
   return (
     <main>
@@ -107,14 +127,13 @@ function CropShow() {
               </figure>
             </div>
             <div className="owner-buttons">
-              {crop.owner && crop ?
-                isOwner(crop.owner.id) && 
+              {crop.owner === user.id ?
                 <div>
                   <Link to={`${crop.id}/edit/`}><button className="edit-btn">Edit</button></Link>
                   <button className="delete-btn" onClick={handleDelete}>Delete</button>
                 </div>
                 :
-                <p>.</p>
+                <p></p>
               }
             </div>
             <div className="comments-area">
@@ -141,12 +160,12 @@ function CropShow() {
             </div>
             <div className="reviews-and-ratings-wrapper">
               <section className="reviews">
-                {crop && crop.comments && crop.comments.length > 0 ?
+                {crop && comments && comments.length > 0 ?
                   <div>
                     <h3>Reviews:</h3>
-                    {crop.comments.map(comment => {
+                    {comments.map(comment => {
                       return (
-                        <div key={comment.id} className="review">
+                        <div key={comment.id} className="comment-block">
                           <h5>{comment.owner.username}</h5>
                           <p>{comment.text}</p>
                           <div className="avatar">
@@ -157,8 +176,8 @@ function CropShow() {
                             }
                           </div>
                           
-                          {isOwner(comment.owner._id) && 
-                        <button className="delete-btn">Delete</button>
+                          {isOwner(comment.owner.id) && 
+                        <button className="delete-btn" onClick={() => handleCommentDelete(comment.id)}>Delete</button>
                           }                   
                         </div>
                       )

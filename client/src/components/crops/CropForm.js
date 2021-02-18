@@ -4,8 +4,6 @@ import { getAllCropTags } from '../../lib/api'
 function CropForm({ handleChange, handleSubmit, formdata, errors }) {
   const [tags, setTags] = React.useState([])
 
-  
-
   React.useEffect(() => {
     const getData = async () => {
       try {
@@ -19,10 +17,11 @@ function CropForm({ handleChange, handleSubmit, formdata, errors }) {
   }, [])
 
   console.log('Errors: ', errors)
+  console.log('Formdata: ', formdata)
   
   return (
-    <form className="add-crop-form" onSubmit={handleSubmit}>
-      <label className="block-form">Name</label>
+    <form className="add-crop-form register-form column is-half is-offset-one-quarter box" onSubmit={handleSubmit}>
+      <label className="block-form label">Name</label>
       <input 
         className="block-form" 
         type="text" 
@@ -38,7 +37,7 @@ function CropForm({ handleChange, handleSubmit, formdata, errors }) {
         :
         <div></div>
       }
-      <label className="block-form">Binomial Name</label>
+      <label className="block-form label">Binomial Name</label>
       <input 
         className="block-form" 
         type="text" 
@@ -54,7 +53,7 @@ function CropForm({ handleChange, handleSubmit, formdata, errors }) {
         :
         <div></div>
       }
-      <label className="block-form">Perennial</label>
+      <label className="block-form label">Perennial</label>
       <input 
         className="block-form"
         type="checkbox" 
@@ -62,7 +61,7 @@ function CropForm({ handleChange, handleSubmit, formdata, errors }) {
         onChange={handleChange} 
         value={formdata.isPerennial}
       />
-      <label className="block-form">Description</label>
+      <label className="block-form label">Description</label>
       <textarea 
         className="block-form"
         name="description" 
@@ -78,7 +77,7 @@ function CropForm({ handleChange, handleSubmit, formdata, errors }) {
         :
         <div></div>
       }
-      <label className="block-form">Image URL</label>
+      <label className="block-form label">Image URL</label>
       <input 
         className="block-form"
         type="text" 
@@ -94,7 +93,7 @@ function CropForm({ handleChange, handleSubmit, formdata, errors }) {
         :
         <div></div>
       }
-      <label className="block-form">Sowing method</label>
+      <label className="block-form label">Sowing method</label>
       <textarea 
         className="block-form"
         name="sowingMethod" 
@@ -110,8 +109,8 @@ function CropForm({ handleChange, handleSubmit, formdata, errors }) {
         :
         <div></div>
       }
-      <label className="block-form">Tags</label>
-      <select className="block-form"
+      <label className="block-form label">Tags</label>
+      <select className="block-form select"
         onChange={handleChange} 
         name="tags"
         value={formdata.venue}
@@ -127,7 +126,9 @@ function CropForm({ handleChange, handleSubmit, formdata, errors }) {
           <option>No options available</option>
         }
       </select>
-      <button type="submit" className="submit-btn">Submit</button>
+      <div className="block-form field">
+        <button type="submit" className="block-form button is-fullwidth form-submit-button">Submit</button>
+      </div>
     </form>
   )
 

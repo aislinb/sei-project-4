@@ -13,7 +13,7 @@ from .serializers.populated import PopulatedUserSerializer
 User = get_user_model()
 
 class RegisterView(APIView):
-    ''' Controller for post request to /auth/register '''
+    ''' Controller for post request to /auth/register/ '''
 
     def post(self, request):
         user_to_create = UserSerializer(data=request.data)
@@ -27,7 +27,7 @@ class RegisterView(APIView):
 
 class LoginView(APIView):
 
-    ''' Controller for post request to /auth/login '''
+    ''' Controller for post request to /auth/login/ '''
 
     def post(self, request):
         email = request.data.get('email')

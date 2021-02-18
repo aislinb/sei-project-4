@@ -92,7 +92,7 @@ DATABASES = {}
 if str(os.getenv('ENVIRONMENT')) == 'development':
     DATABASES['default'] =  {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'farm-django-db', # < --- make sure you chage this
+        'NAME': 'farm-django-db', # < --- make sure you change this
         'HOST': 'localhost',
         'PORT': 5432
     }

@@ -80,15 +80,16 @@ function CropIndex() {
                   // De-structured fields from the event object
                     const { id, name, image } = item
                     return (
-                      <div className="index-item" key={id}>
-                        <Link to={`/crops/${id}`}>
-                          <div className="hvrbox">
-                            <img src={image} alt={name} className="hvrbox-layer_bottom"/>
-                            <div className="hvrbox-layer_top hvrbox-layer_slidedown">
-		                          <div className="hvrbox-text">{name}</div>
-	                          </div>
-                          </div>
-                        </Link>
+                      <div className="index-item box" key={id}>
+                        
+                        <img src={image}></img>
+                        <div className="text">
+                          <h1>{name}</h1>
+                          <hr></hr>
+                          <Link to={`/crops/${id}`} className="read-more">
+                              Read More
+                          </Link>
+                        </div>
                       </div>
                     )
                   })
