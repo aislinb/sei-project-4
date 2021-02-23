@@ -58,7 +58,7 @@ We were tasked with building a full-stack application of our choice, making our 
 	* pylint
 	* QuickDBD
 	* TablePlus
-	* 	VS Code
+	* VS Code
 
 ### How To Install
 1. Clone or download the repo from GitHub onto your machine.
@@ -204,11 +204,10 @@ Insomnia crops “get request”:
 
 ### Challenges
 * **Deployment**: bugs that I discovered only once delaying were challenging as they took a while to rectify, and establishing how to configure a database to run on a live server.
-* Working solo at this stage was a great way to be able to work at my own pace but it also meant I lacked the second pairs of eyes and ears which I had become accustomed to - luckily the instructors were on hadn’t when I needed to talk out loud about a challenge I was facing
+* Working solo at this stage was a great way to be able to work at my own pace but it also meant I lacked the second pairs of eyes and ears which I had become accustomed to - luckily the instructors were on hand when I needed to talk out loud about a challenge I was facing
 
 ### Key Learnings
 * Deeper understanding of React
-* Time Management & Planning - keeping on track using Trello and checking in with the team about our progress every morning during our own small stand-up helped us achieve a lot in a short space of time
 * Alternative full-stack application to MERN we had done previously
 
 ### Future Fixes & Additions
