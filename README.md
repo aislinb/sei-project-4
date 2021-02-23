@@ -1,50 +1,223 @@
-# sei-project-4-django
+#  🍊*My Natoora *🍊
 
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #4: A Django + React App
-## Overview
-**You've come a long way, and it's time to show it.** This will be your final project and is an opportunity to re cap and cement many of the topics we have covered in the last 11 weeks.
-**Remember:** simple code is stable code, so always favour refactoring and bug fixing over adding more functionality.
-With this in mind, you need to be smart about how you plan, limit your project scope to be achievable (in terms of functionality) and focus on quality rather than quantity.
-**Solo or Group?**
-You are free to work alone or in a group. Both ways have their pros and cons. Remember if you are working in a team that you are all on the same page and working towards the same goal.
-Make sure you review your project proposal with your instructor so you can make sure it's **something you can accomplish in the limited time we have**. You will have some time after the project to add extra functionality before showcasing to prospective employers!
----
-## Technical Requirements
-You must:
-* **Build a full-stack application** by making your own backend and your own front-end
-* **Use a Python Django API** using Django REST Framework to serve your data from a Postgres database
+This was my final project for General Assembly’s Software Engineering Immersive course. Working solo, I had a week to develop a full-stack application using Python, Django & a PostgreSQL Database, with a separate front-end built with React. 
+
+![](hero-carousel.png)
+
+### Deployment
+
+This website was deployed using Heroku and is available  [here](https://django-api-natoora-project.herokuapp.com) . 
+Please allow a minute or two for the free servers to wake up..!
+
+### Brief 
+
+We were tasked with building a full-stack application of our choice, making our own back-end and front-end
+
+**Requirements:** 
+* **Use a Python Django API** – using Django REST Framework to serve your data from a Postgres database
 * **Consume your API with a separate front-end** built with React
-* **Be a complete product** which most likely means multiple relationships and CRUD functionality for at least a couple of models
-* **Implement thoughtful user stories/wireframes** that are significant enough to help you know which features are core MVP and which you can cut
-* **Have a visually impressive design** to kick your portfolio up a notch and have something to wow future clients & employers. **ALLOW** time for this.
-* **Be deployed online** so it's publicly accessible.
----
-## Necessary Deliverables
-* A **working app** hosted on the internet
-* A **link to your hosted working app** in the URL section of your Github repo
-* A **git repository hosted on Github**, with a link to your hosted project, and frequent commits dating back to the _very beginning_ of the project
-* **A `readme.md` file** with:
-    * An embedded screenshot of the app
-    * Explanations of the **technologies** used
-    * A couple paragraphs about the **general approach you took**
-    * **Installation instructions** for any dependencies
-    * Link to your **user stories/wireframes** – sketches of major views / interfaces in your application
-    * Link to your **pitch deck/presentation** – documentation of your wireframes, user stories, and proposed architecture
-    * Descriptions of any **unsolved problems** or **major hurdles** you had to overcome
----
-## Suggested Ways to Get Started
-* **Don't get too caught up in too many awesome features** – simple is always better. Build something impressive that does one thing well.
-* **Design first.** Planning with user stories & wireframes before writing code means you won't get distracted changing your mind – you'll know what to build, and you can spend your time wisely by just building it.
-* **Don't hesitate to write throwaway code** to solve short term problems.
-* **Read the docs for whatever technologies / frameworks / API's you use**.
-* **Write your code DRY** and **build your APIs RESTful**.
-* **Be consistent with your code style.** You're working in teams, but you're only making one app per team. Make sure it looks like a unified effort.
-* **Commit early, commit often.** Don't be afraid to break something because you can always go back in time to a previous version.
-* **Keep user stories small and well-defined**, and remember – user stories focus on what a user needs, not what development tasks need accomplishing.
-* **Write code another developer wouldn't have to ask you about**. Do your naming conventions make sense? Would another developer be able to look at your app and understand what everything is?
-* **Make it all well-formatted.** Are you indenting, consistently? Can we find the start and end of every div, curly brace, etc?
-* **Comment your code.** Will someone understand what is going on in each block or function? Even if it's obvious, explaining the what & why means someone else can pick it up and get it.
-* **Write pseudocode before you write actual code.** Thinking through the logic of something helps.
-## Sign Off Requirements
-* Basic wireframs for front end product
-* An ERD diagram for your database tables/relationships
+* **Be a complete product** - multiple relationships and CRUD functionality for a couple of models
+* **Implement thoughtful wireframes** - that you designed before building the app
+* **Have a visually impressive design**
+* **Be deployed online** and accessible to the public
+
+### Technologies We Used
+* **Database**:
+	*  PostgreSQL
+	
+* **Front-end**:
+	* CSS3 + SASS
+	* HTML5
+	* JavaScript (ES6)
+	* React.js
+	
+* **Back-end**:
+	* Python
+	* Django
+	
+* **Dependencies**:
+	* Axios
+	* Bulma
+	* djangorestframework
+	* djangorestframework-camel-case
+	* JSONWebToken
+	* jwt
+	* python-dotenv
+	* psycopg2-binary
+	* react-hero-carousel
+	* react-router-dom
+	* react-select
+	* react-spinners
+	* yarn
+
+* **Development Tools**:
+	* Git + GitHub
+	* Google Fonts
+	* Heroku
+	* Insomnia
+	* pylint
+	* QuickDBD
+	* TablePlus
+	* 	VS Code
+
+### How To Install
+1. Clone or download the repo from GitHub onto your machine.
+2. Install back-end dependencies: `pipenv`
+3. Enter the project shell: `pipenv shell`
+4. Make migrations: `python manage.py makemigrations`
+5. Migrate: `python manage.py migrate`
+6. Load seed data for CropTags: `python manage.py loaddata crop_tags/seeds.json`
+7. Load seed data for CompanionGroups: `python manage.py loaddata companion_groups/seeds.json`
+8. Load seed data for Crops: `python manage.py loaddata crops/seeds.json`
+9. Load seed data for Comments: `python manage.py loaddata comments/seeds.json`
+10. Start the backend server in the root directory: `python manage.py runserver`
+11. Open a second terminal to install dependencies in the client folder `cd client && yarn` or `cd client && npm`
+12. Start the front-end:  `yarn start` 
+
+### Concept
+Born out of a (relatively) recently-discovered passion for growing vegetables, for my fourth project at GA I decided to build a gardening blog. I was inspired by the beautiful photographs on Natoora’s website -  and its ethos which builds focus on sustainable, local farming and highlights seasonal produce from trustworthy and transparent supply chains. I chose to recreate the general style and layout of this site but with the functionality of a community site. Users are able to therefore register/login, browse through all the crops people may be growing and leave comments on them discussing any tips and experiences they may’ve had. They can also create their own which will add to the main list.
+
+### Wireframes
+**Database Entity Relationship Diagram**
+![](DB-ENTITY-RELATIONSHIP-DIAGRAM.png)
+
+
+### Planning
+ I began by drawing up an Entity Relationship Diagram (ERD) as above to work out the relationships I wanted to establish between the database tables. I decided to keep the Minimum Viable Product requirements simple - with users able to create and edit their profiles, create and delete crops to the index page, and create and delete their own comments  on the crops.  After MVP was reached, I would think about adding more functionality, but I really wanted to get comfortable with the Python models that we hadn’t had worked with for more than a week at this point. 
+
+### Setup
+I found Trello an invaluable resource while working solo, and was able to keep on top of each detail that would occur to me by adding a card to the project board. Giving myself short deadlines and a clear cut-off for MVP meant that I was able to keep myself accountable to stick to the plan, too:
+
+![](Screenshot%202021-02-23%20at%2000.49.08.png)
+
+
+### Back-End
+The setting up of the back-end was relatively straightforward, involving: 
+* Creating the PostgreSQL database using TablePlus
+* Creating the seeds data for my index pages 
+* Once the project had been set up, I went about creating my apps 
+
+Crops Model code from crops/models.py: 
+```
+class Crop(models.Model):
+    name = models.CharField(max_length=50)
+    binomial_name = models.CharField(max_length=50)
+    description = models.TextField(max_length=600)
+    is_perennial = models.BooleanField(default=False)
+    image = models.CharField(max_length=300)
+    growing_days  = models.PositiveIntegerField()
+    sowing_method = models.TextField(max_length=400)
+    tags = models.ManyToManyField(
+        'crop_tags.CropTag',
+        related_name="crops",
+        blank=True
+    )
+    companions = models.ManyToManyField(
+        'companion_groups.CompanionGroup',
+        related_name="crops",
+        blank=True
+    )
+    liked_by = models.ManyToManyField(
+        'jwt_auth.User',
+        related_name="liked_crop",
+        blank=True
+    )
+    owner = models.ForeignKey(
+        'jwt_auth.User',
+        related_name='created_crops',
+        on_delete=models.CASCADE
+    )
+
+    def __str__(self):
+        return f"{self.name} - {self.binomial_name}"
+
+```
+
+### Serializers:
+
+PopulatedCropSerializer showing the one-to-many relationships:
+```
+class PopulatedCropSerializer(CropSerializer):
+    """ Used for all outgoing serialization, includes populated Comments """
+
+    tags = CropTagSerializer(many=True)
+    comments = PopulatedCommentSerializer(many=True)
+    companions = CompanionGroupSerializer(many=True)
+
+
+```
+
+### Views:
+An example code block for viewing a specific crop by id:
+```
+class CropDetailView(APIView): # extend the APIView
+
+    def get_crop(self, pk):
+        ''' returns crop from db by its pk(id) or responds 404 not found '''
+        try:
+            return Crop.objects.get(pk=pk)
+        except Crop.DoesNotExist:
+            raise NotFound()
+            
+
+    def get(self, _request, pk):
+        crop = self.get_crop(pk=pk) # get a crop by id
+        serialized_crop = PopulatedCropSerializer(crop)
+        return Response(serialized_crop.data, status=status.HTTP_200_OK)  # send the JSON to the client
+
+```
+
+### Insomnia 
+I relied on this tool greatly in troubleshooting the above code and it helped see visually how the data was being stored:
+![](Screenshot%202021-02-23%20at%2002.12.48.png)
+
+### Front-End
+Adding the front-end to the project went relatively smoothly and I was quickly moving on to mapping through the crop in the show page to show tags and comments:
+
+```
+const handleSubmit = async (event) => {
+    event.preventDefault()
+    try {
+      console.log(formdata)
+      await createCropComment(formdata)
+      const { data } = await getSingleCrop(id)
+      setCrop(data)
+      formdata.text = ''
+      crop.id = ''
+      console.log(formdata)
+    } catch (err) {
+      setErrors(err.response.data.errors)
+    }
+  }
+
+```
+
+It took a while to establish how exactly to get the crops tags “name” to display how I wanted - again I used Insomnia to help identify how this information was nested:
+Insomnia crops “get request”:
+![](Screenshot%202021-02-02%20at%2016.05.13.png)
+
+
+### Wins
+* **Styling**: it was important to me to focus on mobile-responsive design for this project, and I am pleased with the nav bar and index  & registration pages. I also think a likeness was achieved in the index page with the collage of photos and hover-links:
+[**INDEX PAGE IMAGE TO BE ADDED**]
+*  **Relationships** - I’m pleased that, although not all of them have been used in the front-end yet, the relationships between companion groups, crops and tags have all been established which will make adding to this project much simpler. 
+
+### Challenges
+* **Deployment**: bugs that I discovered only once delaying were challenging as they took a while to rectify, and establishing how to configure a database to run on a live server.
+* Working solo at this stage was a great way to be able to work at my own pace but it also meant I lacked the second pairs of eyes and ears which I had become accustomed to - luckily the instructors were on hadn’t when I needed to talk out loud about a challenge I was facing
+
+### Key Learnings
+* Deeper understanding of React
+* Time Management & Planning - keeping on track using Trello and checking in with the team about our progress every morning during our own small stand-up helped us achieve a lot in a short space of time
+* Alternative full-stack application to MERN we had done previously
+
+### Future Fixes & Additions
+* Select boxes in index page
+* Companion Planting section - this relationship is established in the backend but unfortunately I didn’t have enough time to add this feature to the front-end. The idea is that a user can create a “garden” of companion plants which provide complimentary growing conditions to one another through their proximity
+* Add an e-commerce capability to the app so that users can buy and sell both seeds and also grown produce
+
+### Want to contribute?
+If you have suggestions for improving this project, please let me know on GitHub .
+
+### License & copyright
+This project was built for educational purposes - all info is fictional
