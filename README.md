@@ -195,6 +195,7 @@ It took a while to establish how exactly to get the crops tags “name” to dis
 Insomnia crops “get request”:
 ![Insomnia Get Request](./client/src/images/insomnia-get-request.png)
 
+![Mobile Responsive Design Registration Page](client/src/images/mobile-responsive-register.png)
 
 ### Wins
 * **Styling**: it was important to me to focus on mobile-responsive design for this project, and I am pleased with the nav bar and index  & registration pages. I also think a likeness was achieved in the index page with the collage of photos and hover-links:
