@@ -2,7 +2,7 @@
 
 This was my final project for General Assembly’s Software Engineering Immersive course. Working solo, I had a week to develop a full-stack application using Python, Django & a PostgreSQL Database, with a separate front-end built with React. 
 
-![](hero-carousel.png)
+![Hero Carousel](./client/src/images/hero-carousel.png)
 
 ### Deployment
 
@@ -79,7 +79,7 @@ Born out of a (relatively) recently-discovered passion for growing vegetables, f
 
 ### Wireframes
 **Database Entity Relationship Diagram**
-![](DB-ENTITY-RELATIONSHIP-DIAGRAM.png)
+![Database ERD](./client/src/images/DB-ENTITY-RELATIONSHIP-DIAGRAM.png)
 
 
 ### Planning
@@ -88,8 +88,7 @@ Born out of a (relatively) recently-discovered passion for growing vegetables, f
 ### Setup
 I found Trello an invaluable resource while working solo, and was able to keep on top of each detail that would occur to me by adding a card to the project board. Giving myself short deadlines and a clear cut-off for MVP meant that I was able to keep myself accountable to stick to the plan, too:
 
-![](Screenshot%202021-02-23%20at%2000.49.08.png)
-
+![Trello Planning](./client/src/images/trello-planning.png)
 
 ### Back-End
 The setting up of the back-end was relatively straightforward, involving: 
@@ -168,8 +167,8 @@ class CropDetailView(APIView): # extend the APIView
 ```
 
 ### Insomnia 
-I relied on this tool greatly in troubleshooting the above code and it helped see visually how the data was being stored:
-![](Screenshot%202021-02-23%20at%2002.12.48.png)
+I relied on this tool greatly in troubleshooting the above code and it helped see visually how the data was being stored, e.g. with user authorization when creating a new crop with POST request:
+![Insomnia Create a Crop](./client/src/images/insomnia.png)
 
 ### Front-End
 Adding the front-end to the project went relatively smoothly and I was quickly moving on to mapping through the crop in the show page to show tags and comments:
@@ -194,7 +193,7 @@ const handleSubmit = async (event) => {
 
 It took a while to establish how exactly to get the crops tags “name” to display how I wanted - again I used Insomnia to help identify how this information was nested:
 Insomnia crops “get request”:
-![](Screenshot%202021-02-02%20at%2016.05.13.png)
+![Insomnia Get Request](./client/src/images/insomnia-get-request.png)
 
 
 ### Wins
