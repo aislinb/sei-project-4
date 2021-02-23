@@ -79,7 +79,7 @@ Born out of a (relatively) recently-discovered passion for growing vegetables, f
 
 ### Wireframes
 **Database Entity Relationship Diagram**
-![Database ERD](./client/src/images/readme/DB-ENTITY-RELATIONSHIP-DIAGRAM.png)
+![Database ERD](./client/src/images/readme/db-erd.png)
 
 
 ### Planning
@@ -88,7 +88,7 @@ Born out of a (relatively) recently-discovered passion for growing vegetables, f
 ### Setup
 I found Trello an invaluable resource while working solo, and was able to keep on top of each detail that would occur to me by adding a card to the project board. Giving myself short deadlines and a clear cut-off for MVP meant that I was able to keep myself accountable to stick to the plan, too:
 
-![Trello Planning](./client/src/images/readme/trello-planning.png)
+![Trello Planning](/client/src/images/readme/trello-planning.png)
 
 ### Back-End
 The setting up of the back-end was relatively straightforward, involving: 
