@@ -13,7 +13,7 @@ main {
   margin: auto;
   margin-bottom: 70px;
   background-color: white;
-  padding: 100px 0;
+  padding: 100px 0 0 0;
 }
 
 .home-body {
@@ -376,7 +376,7 @@ main {
 .index-page {
   display: flex;
   margin: auto;
-  padding-bottom: 10px;
+  // padding-bottom: 0px;
 
   .top-banner {
     display: flex;
@@ -499,97 +499,9 @@ main {
   .box:hover .read-more{
     display: block;
   }
-  // .hvrbox .hvrbox-layer_slidedown {
-  //   -moz-transform: translateY(-100%);
-  //   -webkit-transform: translateY(-100%);
-  //   -ms-transform: translateY(-100%);
-  //   transform: translateY(-100%);
-  // }
-  // .hvrbox:hover .hvrbox-layer_slidedown,
-  // .hvrbox.active .hvrbox-layer_slidedown {
-  //   -moz-transform: translateY(0);
-  //   -webkit-transform: translateY(0);
-  //   -ms-transform: translateY(0);
-  //   transform: translateY(0);
-  // }
+  
 
 
-
-// CONTACT / ABOUT
-
-.contact-page {
-  display: flex;
-  margin: auto;
-  padding-bottom: 10px;
-
-  .top-banner {
-    display: flex;
-  }
-}
-
-
-// .contact-page {
-//   display: flex;
-//   flex-direction: column;
-//   width: 70%;
-
-//   .contact-wrapper {
-//     display: flex;
-//     flex-direction: column;
-//   }
-
-//   .top-banner {
-//     display: flex;
-//     width: 100%;
-//     margin: 0;
-//   }
-//   .below-banner {
-//     display: flex;
-//     flex-direction: column;
-//     width: 80%;
-//     margin: auto;
-//   }
-
-//   .index-header {
-//     display: flex;
-//     height: 100px;
-//   }
-
-//   .form-heading {
-//     display: flex;
-//     align-items: center;
-//     flex-direction: column;
-//     font-size: 300px;
-//   }
-
-//   .stores {
-//     display: flex;
-//     flex-direction: row;
-//     flex-wrap: wrap;
-//     justify-content: space-around;
-//     margin-top: 20px;
-//     width: 33.3%;
-
-//     .stores-item {
-//       display: flex;
-//       flex-direction: column;
-//       width: 40%;
-//       justify-content: space-around;
-//       margin-bottom: 20px;
-//       height: auto;
-//       font-size: 15;
-
-//       h1 {
-//         text-emphasis: bold;
-//         padding: 15px 0 15px 0;
-//       }
-
-//       p {
-//         padding: 10px 0;
-//       }
-//     }
-//   }
-// }
 
 // CROP SHOW
 
@@ -612,6 +524,87 @@ main {
     // }
   }
 
+
+  // CONTACT / ABOUT
+
+
+
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+
+  .index-header {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: auto;
+  }
+
+  .index-header {
+    p {
+      line-height: 1.5;
+      padding: 20px 0 20px 0;
+    }
+  
+}
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top-banner {
+    display: flex;
+    width: 100%;
+    margin: 0;
+  }
+  .below-banner {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+  }
+
+  .index-header {
+    display: flex;
+    height: 100px;
+  }
+
+  .form-heading {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 300px;
+  }
+
+  .stores {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    width: 33.3%;
+
+    .stores-item {
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      justify-content: space-around;
+      margin-bottom: 20px;
+      height: auto;
+      font-size: 15;
+
+      h1 {
+        text-emphasis: bold;
+        padding: 15px 0 15px 0;
+      }
+
+      p {
+        padding: 10px 0;
+      }
+    }
+  }
+}
 
 //media queries for index pages
 @media only screen and (max-width: 800px) {

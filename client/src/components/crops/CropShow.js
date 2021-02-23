@@ -71,7 +71,7 @@ function CropShow() {
 
   
 
-  // // COMMENTS
+  // COMMENTS
   const handleCommentDelete = async (commentId) => {
     try {
       await deleteCropComment(id, commentId)

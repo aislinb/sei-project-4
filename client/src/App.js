@@ -3,7 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 import Nav from './components/common/Nav'
 import Home from './components/common/Home'
-import Footer from './components/common/Footer'
+
 import CropIndex from './components/crops/CropIndex'
 import CompanionGroups from './components/companions/CompanionGroups'
 import CropNew from './components/crops/CropNew'
@@ -36,7 +36,6 @@ function App() {
         <Route path="/about-us" component={About} />
         <Route path="/contact-us" component={Contact} />
       </Switch>
-      <Footer />
     </BrowserRouter>
   )
 

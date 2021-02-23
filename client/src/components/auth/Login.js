@@ -31,7 +31,7 @@ function Login() {
 
   return (
     <main>
-      <section className="section central-body register-page">
+      <section className="section central-body register-page login">
         <div className="container">
           <div className="columns">
             <form className="register-form column is-half is-offset-one-quarter box" onSubmit={handleSubmit}>

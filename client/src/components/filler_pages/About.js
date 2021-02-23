@@ -6,7 +6,7 @@ import React from 'react'
 function About() {
   return (
     <main>
-      <div className="central-body contact-page">
+      <section className="section flex-div central-body contact-page">
         <div className="top-banner">
           <figure className="about-banner">
             <img src="https://www.natoora.co.uk/img/pages/mission/natoora-mission-large001.jpg" alt="banner-image" />
@@ -88,7 +88,7 @@ function About() {
           </div>
 
         </div>
-      </div>
+      </section>
     </main>
   )
 

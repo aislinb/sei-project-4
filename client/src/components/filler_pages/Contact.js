@@ -7,7 +7,7 @@ function Contact() {
 
   return (
     <main>
-      <section className="section flex-div central-body contact-page">
+      <section className="section central-body contact-page">
         <div className="top-banner">
           <figure>
             <img className="fullwidth-image" src="https://www.natoora.co.uk/img/pages/howtobuy/delivered/natoora-delivered-banner-uk.jpg" alt="banner-image" />
