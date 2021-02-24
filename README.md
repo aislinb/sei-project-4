@@ -92,6 +92,8 @@ I found Trello an invaluable resource while working solo, and was able to keep o
 ![Trello Planning](/client/src/images/trello-planning.png)
 
 ### Back-End
+**Setup:**
+
 The setting up of the back-end was relatively straightforward, involving: 
 * Creating the PostgreSQL database using TablePlus
 * Creating the seeds data for my index pages 
@@ -133,7 +135,7 @@ class Crop(models.Model):
 
 ```
 
-### Serializers:
+**Serializers:**
 
 Serializer from `crops/serializers/populated.py` showing the one-to-many relationships for the companions and comments and the many-to-many relationship for the tags:
 ```
@@ -147,7 +149,8 @@ class PopulatedCropSerializer(CropSerializer):
 
 ```
 
-### Views:
+**Views:**
+
 An example code block for viewing a specific crop by id:
 ```
 class CropDetailView(APIView): # extend the APIView
@@ -167,7 +170,8 @@ class CropDetailView(APIView): # extend the APIView
 
 ```
 
-### Insomnia 
+**Insomnia:**
+
 I relied on this tool greatly in troubleshooting the above code as it helped see visually how the data was being stored. An example below shows testing the user authorization was in place correctly when the user creates a new crop with a POST request:
 
 ![Insomnia Create a Crop](./client/src/images/insomnia.png)
