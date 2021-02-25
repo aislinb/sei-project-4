@@ -39,7 +39,6 @@ function CropNew() {
       <section className="section central-body register-page">
         <div className="container">
           <div className="columns new-form-flex">
-            
             <h1 className="form-heading">Let us know what you&apos;ve been enjoying growing, recently...</h1>
             <CropForm 
               handleChange={handleChange}

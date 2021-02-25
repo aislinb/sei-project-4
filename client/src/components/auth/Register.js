@@ -117,7 +117,7 @@ function Register() {
                 </div>
                 {errors.passwordConfirmation && <p className="error-in-form error-message">{errors.passwordConfirmation}</p>}
               </div>
-              <div className="block-form field">
+              <div className="block-form field reg-button">
                 <button type="submit" className="block-form button is-fullwidth form-submit-button">Register</button>
               </div>
               <div className="block-form account-already">

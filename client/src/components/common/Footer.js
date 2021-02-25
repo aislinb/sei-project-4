@@ -2,12 +2,22 @@ import React from 'react'
 
 function Footer() {
   return (
-    <footer className="footer">
-      <div className="content has-text-centered">
-        <p className="big">© Copyright 2020 Natoora Ltd | All rights reserved | Privacy Policy | Terms of Use | Cookies Policy | Wholesale T&C&apos;s | Home Delivery T&C&apos;s</p>
-        <p className="small">All of this absolutely accurate gardening advice was brought to you by Aislin Bamber, novice gardener and accidental plant neglector.</p>
+    <div className="footer">
+      <div className="bottom-footer">
+        <ul>
+          <li className="copy-footer">© YehCopyright 2020 MyNatoora Ltd</li>
+          <li className="copy-footer"><span>|</span>All rights reserved</li>
+          <li><span>|</span><a href="natoora-privacy-policy">Privacy Policy</a></li>
+          <li><span>|</span><a href="natoora-terms-of-use.php">Terms of Use</a></li>
+          <li><span>|</span><a href="natoora-cookies-policy.php">Cookies Policy</a></li>
+          <li><span>|</span><a href="wholesale-terms-and-conditions.php">Wholesale T&amp;C&apos;s</a></li>
+          <li><span>|</span><a href="home-delivery-terms.php">Home Delivery T&amp;C&apos;s</a></li>
+        </ul>
+        <div className="trademark">
+			MyNatoora has been made for educational purposes only
+        </div>
       </div>
-    </footer>
+    </div>
   )
 }
 
