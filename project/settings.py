@@ -11,12 +11,10 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 import django_on_heroku
 import os
-
 from pathlib import Path
 from dotenv import load_dotenv
 import dj_database_url
 load_dotenv()
-
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -29,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECRET_KEY = 'o6%wp^cq-2l#9supcb$1u1t!okf0ux3-d8slah5#&vaso4$+5_'
 
 if str(os.getenv('ENVIRONMENT')) == 'development':
-    SECRET_KEY = 'o6%wp^cq-2l#9supcb$1u1t!okf0ux3-d8slah5#&vaso4$+5_' # should be whatever your original key was
+    SECRET_KEY = 'o6%wp^cq-2l#9supcb$1u1t!okf0ux3-d8slah5#&vaso4$+5_' # whatever your original key was
 else:
     SECRET_KEY = str(os.getenv('SECRET_KEY'))
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -47,8 +45,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'crops',
     'rest_framework',
+    'crops',
     'crop_tags',
     'comments',
     'jwt_auth',
@@ -88,6 +86,7 @@ WSGI_APPLICATION = 'project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+
 DATABASES = {}
 if str(os.getenv('ENVIRONMENT')) == 'development':
     DATABASES['default'] =  {
@@ -98,7 +97,6 @@ if str(os.getenv('ENVIRONMENT')) == 'development':
     }
 else:
     DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
