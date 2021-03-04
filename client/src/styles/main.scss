@@ -1,10 +1,11 @@
 @import '~bulma/bulma.sass';
-
+@import url('https://fonts.googleapis.com/css?family=Proxima+Nova');
 $brand-grey:  #1c1c1c;
 
 body {
-  background: black;
+  background: #000000;
   height: 100%;
+  
 }
 
 main {
@@ -17,7 +18,7 @@ main {
   background-color: $brand-grey;
   max-width: 1200px;
   margin: auto;
-  align-items: center;
+  // align-items: center;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -27,7 +28,179 @@ main {
 
   .top-row {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+    max-width: 1200px;
+    justify-content: space-between;
+    justify-content: center;
+    margin: 0;
+    // padding: 30px;
+    img {
+      max-width: 150px;
+      height: auto;
+      margin: 30px 30px 30px 0;
+      padding: 0;
+    }
+    .natoora0logo-white {
+      max-width: 144px;
+      padding-bottom: 12px;
+      fill: white;
+    }
+
+    .middle-columns {
+      
+      max-width: 600px;
+      margin: 30px;
+      ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      //   max-height: 100px;
+      //   margin: 0 30px;
+      //   // max-width: 50%;
+        li {
+          all: unset;
+          width: 150px;
+          height: 50px;
+          // display: block;
+          // float: left;
+          // margin: 0 1rem 1rem;
+          // width: 24.19564%;
+          a:link { 
+            color: #fff; 
+          }
+          a:link:hover {
+
+            border-bottom: 1px solid;
+            padding: 0 0 5px 0;
+          }
+        }
+
+      }
+    }
+
+    .say-hello-div {
+      font-family: proxima_novasemibold, sans-serif;
+      align-content: left;
+      margin: 30px;
+      text-align: left;
+      // padding: 20px;
+      h3 {
+        font-size: 26px;
+        line-height: 35px;
+        font-weight: bold;
+        padding-bottom: 10px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 25px;
+        font-weight: bold;        
+      }
+    }
+  }
+  .footer-form {
+    max-width: 1200px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    // width: 100%;
+    margin-left: 30px;
+    font-family: proxima_novasemibold, sans-serif;
+    // font-weight: 700;
+    // font-size: 100%;
+    font-weight: bold;
+    form {
+      h4 {
+        padding-bottom: 15px;
+        font-weight: bold;
+      }
+      .email-input {
+        height: 45px;
+        border-radius: 0px;
+        background: $brand-grey;
+        clear: both;
+        color: #fff;
+        border-color: #fff;
+        border-style: solid;
+        box-shadow: 0px;
+        border-width: thin;
+        padding-left: 15px;
+        font-size: 16px;
+        width: 100%;
+      }
+      textarea {
+        height: 90px;
+        border-radius: 0px;
+        background: $brand-grey;
+        clear: both;
+        color: #fff;
+        border-color: #fff;
+        border-style: solid;
+        box-shadow: 0px;
+        border-width: thin;
+        font-size: 16px;
+        padding: 5px;
+        text-align: left;
+    
+      }
+      div {
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+      ul {
+        padding-bottom: 15px;
+      }
+      .radio-select {
+        padding-left: 15px;
+      }
+    }
+  }
+  .bottom-row {
+    display: flex;
+    flex-direction: row;
+    // flex-wrap: nowrap;
+    justify-content: space-between;
+    
+  }
+  button {
+    align-items: center;
+    display: center;
+    background: #fff;
+    clear: both;
+    color: $brand-grey;
+    border-radius: 0px;
+    width: 150px;
+    font-weight: bold;
+  }
+  .social {
+    display: flex;
+    flex-direction: row;
+    // justify-content: flex-end;
+    margin-left: 100px;
+    // padding: auto;
+    width: 200px;
+    align-items: center;
+  }
+  .social-block {
+    
+    display: flex;
+    margin: 0 20px;
+    padding-top: 5px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+
+    svg {
+        fill: #fff;
+      }
+    SVG:HOVER {
+        fill: $brand-grey;
+        background: white;
+        border-radius: 50%;
+      }
+
   }
 }
 
@@ -40,8 +213,8 @@ main {
   text-align: center;
   display: flex;
   flex-direction: column;
-  background-color: black;
-  color: white;
+  background-color: #000000;
+  color: #fff;
 
   .bottom-footer {
   
@@ -75,7 +248,7 @@ main {
   // width: 80%;
   margin: auto;
   margin-bottom: 0px;
-  background-color: black;
+  background-color: #000000;
   padding: 120px 0 0 0;
   max-width: 1200px;
 
@@ -85,7 +258,7 @@ main {
   // width: 80%;
   margin: auto;
   // margin-bottom: 70px;
-  background-color: white;
+  background-color: #fff;
   // padding: 100px 0 0 0;
   max-width: 1200px;
   margin-top: 200px;
@@ -104,7 +277,7 @@ main {
 
 
 .hero-carousel {
-  // background-color: black;
+
   // align-items: center;
   // // width: 100%;
   // height: auto;
@@ -120,8 +293,8 @@ main {
 .index-page {
 
   .all-crops {
-    color: white;
-    text-decoration: white;
+    color: #fff;
+    text-decoration: #fff;
     text-emphasis: heavy;
 
   }
@@ -133,12 +306,34 @@ main {
 
 
 // NAVBAR 
+
+// .nav-logo {
+//   color: #000;
+//   text-transform: uppercase;
+//   list-style: none;
+//   box-sizing: border-box;
+//   font-family: proxima_nova_rgregular, sans-serif;
+//   font-size: 1rem;
+//   line-height: 19px;
+//   padding: 0;
+//   vertical-align: middle;
+//   float: left;
+//   // background: url(../images/sprite.svg) no-repeat;
+//   background-size: 100%;
+//   border: none !important;
+//   display: block;
+//   height: 80px;
+//   width: 12%;
+//   transition: all .2s;
+//   padding-bottom: 5px;
+// }
+
 .navbar {
   font-family: proxima-nova, sans-serif;
   font-style: normal;
   font-weight: 100;
-  background-color: white;
-  color: black;
+  background-color: #fff;
+  color: #000000;
   // width: 80%;
   margin: auto;
   padding: 0 10px 0 10px;
@@ -155,15 +350,10 @@ main {
   }
 
   .nav-button {
+    
     margin-right: 20px;
     background-color: none;
     border: none;
-
-    button:hover {
-      text-decoration: underline;
-
-
-    }
   }
 
   
@@ -378,30 +568,12 @@ main {
 
 
 
-.login-page {
-  width: 40%;
-  margin: auto;
-
-  h1 {
-    font-size: 25px;
-    margin-bottom: 10px;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  p {
-    font-size: 11px;
-  }
-
+.login {
+  
   .or {
-    text-align: center;
-    margin: 10px;
+    padding: 0px;
+    margin: 0px;
   }
-
-  button {
-    align-items: center;
-  }
-
 }
 
 
@@ -500,13 +672,13 @@ main {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      background: black;
+      background: #000000;
       margin: auto;
     }
     .index-item {
       width: 33.33%;
       height: width;
-      color: white;
+      color: #fff;
       padding: 0;
       margin: 0;
     }
@@ -535,7 +707,7 @@ main {
     top: 10%; /* Adjust this value to move the positioned div up and down */
     text-align: left;
     width: 70%; /* Set the width of the positioned div */
-    color: white;
+    color: #fff;
     font-size: 20px;
     line-height: 24px;
     margin-right: 12px;
@@ -720,10 +892,17 @@ main {
   nav ul, nav .nav-button {
     font-size: 0.6rem;
   }
+  .middle-columns {
+    justify-content: space-between;
+    }
 }
 @media only screen and (max-width: 625px) {
   nav ul {
     width: 100%;
+  }
+  .nav-item {
+    margin: 0 10px;
+    justify-content: space-between;
   }
 }
 }

@@ -9,9 +9,9 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
-import django_on_heroku
 import os
 from pathlib import Path
+import django_on_heroku
 from dotenv import load_dotenv
 import dj_database_url
 load_dotenv()
@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECRET_KEY = 'o6%wp^cq-2l#9supcb$1u1t!okf0ux3-d8slah5#&vaso4$+5_'
 
 if str(os.getenv('ENVIRONMENT')) == 'development':
-    SECRET_KEY = 'o6%wp^cq-2l#9supcb$1u1t!okf0ux3-d8slah5#&vaso4$+5_' # whatever your original key was
+    SECRET_KEY = 'o6%wp^cq-2l#9supcb$1u1t!okf0ux3-d8slah5#&vaso4$+5_'
 else:
     SECRET_KEY = str(os.getenv('SECRET_KEY'))
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -49,9 +49,11 @@ INSTALLED_APPS = [
     'crops',
     'crop_tags',
     'comments',
-    'jwt_auth',
     'companion_groups',
+    'jwt_auth'
 ]
+
+AUTH_USER_MODEL = 'jwt_auth.User'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -62,12 +64,12 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+ROOT_URLCONF = 'project.urls'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'client')
-                 ]  #Look, we have added the root folder of frontend here
-        ,
+        'DIRS': [os.path.join(BASE_DIR, 'client')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -147,14 +149,10 @@ REST_FRAMEWORK = {
     ],
 }
 
-ROOT_URLCONF = 'project.urls'
+STATIC_URL = '/static/' # same with this
 
-STATIC_URL = '/static/'
-
-AUTH_USER_MODEL = 'jwt_auth.User'
-
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'client', 'build', 'static'),
-)
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'client', 'build', 'static')
+]
 
 django_on_heroku.settings(locals())

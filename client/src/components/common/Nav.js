@@ -32,6 +32,10 @@ function Nav() {
               <div className="logo-image">
                 <img src="https://images.squarespace-cdn.com/content/v1/5ed034aaab927132aa19a21d/1601539956445-1Z3EQO8X8S3MHEKHONMM/ke17ZwdGBToddI8pDm48kMABmXfHFJ1hPhaBVAaleilZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpxcLMSb-u98vE5T7M6L1cpWXMj3FU9GeFt3G9woqbsI-XeQjidn880xzk_2dDWgBr0/Natoora_Logo.png?format=1000w" className="img-fluid"></img>
               </div>
+              <li className="nav-logo">
+                <a href="/"></a>
+              </li>
+              
             </a>
           </Link>
           <span onClick={handleMenuToggle} className={`navbar-burger ${isOpen ? 'is-active' : ''}`}>
