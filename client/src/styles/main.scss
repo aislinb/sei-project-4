@@ -3,7 +3,7 @@
 $brand-grey:  #1c1c1c;
 
 body {
-  background: #000000;
+  background-color: #000000;
   height: 100%;
   
 }
@@ -11,6 +11,7 @@ body {
 main {
 
   min-height: 100%;
+  background-color: #000000;
   
 }
 
@@ -51,6 +52,7 @@ main {
       
       max-width: 600px;
       margin: 30px;
+      font-size: .85rem;
       ul {
         display: flex;
         flex-direction: row;
@@ -118,14 +120,14 @@ main {
       }
       .email-input {
         height: 45px;
-        border-radius: 0px;
+        border-radius: 1px;
         background: $brand-grey;
         clear: both;
         color: #fff;
-        border-color: #fff;
+        border-color: #999 ;
         border-style: solid;
         box-shadow: 0px;
-        border-width: thin;
+        // border-width: thin;
         padding-left: 15px;
         font-size: 16px;
         width: 100%;
@@ -136,7 +138,7 @@ main {
         background: $brand-grey;
         clear: both;
         color: #fff;
-        border-color: #fff;
+        border-color: #999;
         border-style: solid;
         box-shadow: 0px;
         border-width: thin;
@@ -224,6 +226,7 @@ main {
     justify-content: space-evenly;
     text-align: center;
     font-size: 14px;
+    flex-wrap: wrap;
   
     span {
       padding: 0 10px 0 10px;
@@ -339,6 +342,7 @@ main {
   padding: 0 10px 0 10px;
   font-size: 14px;
   max-width: 1200px;
+  box-shadow: 0 4px 16px -2px rgba(0, 0, 0, 0.2);
 
   .navbar-menu {
     padding: 20px 0 20px 0;
@@ -346,22 +350,37 @@ main {
 
   .navbar-item {
     display: flex;
-    margin-right: auto;
+    margin-right: 15px;
   }
 
-  .nav-button {
+  // .navbar-item:hover {
+  //   display: flex;
+  //   margin-right: auto;
     
+  // }
+
+  .nav-button {
+    all: unset;
     margin-right: 20px;
     background-color: none;
     border: none;
+    // border-radius: 100%;
+    display: flex;
+    margin-left: 15px;
+    font-weight: bold;
+    color: $brand-grey;
+  }
+  .hover:hover {
+    border-bottom: 1px solid;
+    color: #000000;
   }
 
   
   .logo-image{
-    
     margin-top: 10px;
-    padding-left: 35px;
-}
+    padding-left: 15px;
+    height: 100%;
+  }
   
 }
 
@@ -394,43 +413,30 @@ main {
 .new-form-flex {
   display: flex;
   flex-direction: column;
-  margin-top: 100px;;
-}
 
-.new-crop {
-  display: flex;
-  align-items: center;
-
-  .flex-div {
+  .add-crop-form {
+    margin-top: 0;
     display: flex;
     flex-direction: column;
-    padding-top: 10px;
-    .add-crop-form {
-      // margin-top: 230px;
-      display: flex;
-      flex-direction: column;
-      
+    h1 {
+      text-transform: uppercase;
+      text-align: left;
     }
-
-    .block-form {
-      margin: 5px;
+    label {
+      color: white;
+      margin: 30px 0 0 0;
     }
-
-    .select .text-area .input {
-      padding: 5px 0 5px 0;
+    .checkbox {
+      width: 3%;
     }
-
-    .submit-btn {
-      margin-top: 20px;
+    select {
+      padding-right: 50px;
+      color: pink;
     }
-
-  }
-
-  .form-heading {
-    padding: 10px;
-    font-weight: bold;
-    font-size: 20px;
-    margin-left: -5px;
+    textarea {
+      padding: 10px;
+    }
+    
   }
 }
 
@@ -476,7 +482,7 @@ main {
     background: $brand-grey;
     clear: both;
     color: #fff;
-    border-color: #fff;
+    border-color: #999;
     border-style: solid;
     box-shadow: 0px;
     border-width: thin;
@@ -491,7 +497,7 @@ main {
     background: $brand-grey;
     clear: both;
     color: #fff;
-    border-color: #fff;
+    border-color: #999;
     border-style: solid;
     box-shadow: 0px;
     border-width: thin;
@@ -507,7 +513,7 @@ main {
   .select {
     color: #fff;
     background: $brand-grey;
-    border-color: #fff;
+    border-color: #999;
     border-style: solid;
     box-shadow: 0px;
     border-width: thin;
@@ -519,7 +525,7 @@ main {
   button {
     align-items: center;
     display: center;
-    background: #fff;
+    background: #f0f0f0;
     clear: both;
     color: $brand-grey;
     border-radius: 0px;
@@ -595,30 +601,29 @@ main {
   padding-top: 5px;
 }
 
-// profile show page::after
+// PROFILE SHOW PAGE
 
-// .profile-show {
-//   width: 60%;
-//   align-items: center;
-//   margin: auto;
-//   margin-top: -70px;
-
-//   main {
-//     width: 90vw;
-//     margin: 4rem auto 0 auto;
+.profile-show {
   
-//   }
+  align-items: center;
+  margin: auto;
+  margin-top: -70px;
 
-//   .flex-div {
-//     flex-direction: column;
+  main {
+    width: 90vw;
+    margin: 4rem auto 0 auto;
+  
+  }
 
-//   }
+  .flex-div {
+    flex-direction: column;
 
-//   .profile-container {
-//     margin: auto;
+  }
 
-//   }
-// }
+  .profile-container {
+    margin: auto;
+  }
+}
 
 //  INDEX PAGE
 
@@ -750,7 +755,7 @@ main {
   }
   
 
-
+}
 
 // CROP SHOW
 
@@ -775,82 +780,80 @@ main {
 
   // CONTACT / ABOUT
 
+
 .contact-page {
-//   display: flex;
-//   flex-direction: column;
-//   width: 70%;
+    display: flex;
+    margin: auto;
+    // padding-bottom: 0px;
+    .top-banner {
+      display: flex;
+      padding-top: 50px;
+      width: 100%;
+    }
+    .below-banner {
+          display: flex;
+          flex-direction: column;
+          // width: 80%;
+          margin: 44px 25px;
 
-//   .index-header {
-//     display: flex;
-//     flex-direction: column;
-//     width: 85%;
-//     margin: auto;
-//   }
+        .form-heading {
+          display: flex;
+          line-height: 62px;
+          font-size: 32px;
+          display: block;
+          margin-left: 15px;
+          // color: #fff;
 
-//   .index-header {
-//     p {
-//       line-height: 1.5;
-//       padding: 20px 0 20px 0;
-//     }
-  
-// }
-//   .contact-wrapper {
-//     display: flex;
-//     flex-direction: column;
-//   }
-
-//   .top-banner {
-//     display: flex;
-//     width: 100%;
-//     margin: 0;
-//   }
-//   .below-banner {
-//     display: flex;
-//     flex-direction: column;
-//     width: 80%;
-//     margin: auto;
-//   }
-
-//   .index-header {
-//     display: flex;
-//     height: 100px;
-//   }
-
-//   .form-heading {
-//     display: flex;
-//     align-items: center;
-//     flex-direction: column;
-//     font-size: 300px;
-//   }
-
-//   .stores {
-//     display: flex;
-//     flex-direction: row;
-//     flex-wrap: wrap;
-//     justify-content: space-around;
-//     margin-top: 20px;
-//     width: 33.3%;
-
-//     .stores-item {
-//       display: flex;
-//       flex-direction: column;
-//       width: 40%;
-//       justify-content: space-around;
-//       margin-bottom: 20px;
-//       height: auto;
-//       font-size: 15;
-
-//       h1 {
-//         text-emphasis: bold;
-//         padding: 15px 0 15px 0;
-//       }
-
-//       p {
-//         padding: 10px 0;
-//       }
-//     }
-//   }
+        }
+        .index-header {
+          display: flex;
+          // height: 100px;
+        }
+        
+      
+        .stores {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          // justify-content: space-around;
+          // margin-top: 20px;
+          // width: 33.3%;
+      
+          .stores-item {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            
+            margin-bottom: 20px;
+            // height: auto;
+            font-size: 15;
+      
+            h1 {
+              text-emphasis: bold;
+              padding: 15px 0 15px 0;
+              font-size: 19.2px;
+              display: block;
+              padding: 0;
+              margin-block-start: 1.33em;
+              margin-block-end: 1.33em;
+              margin-inline-start: 0px;
+              margin-inline-end: 0px;
+              font-weight: bold;
+            }
+      
+            p {
+              padding: 10px 0;
+              font-size: 16px;
+            }
+          }
+        }
+    }
 }
+
+
+  
+
 
 
 
@@ -904,5 +907,4 @@ main {
     margin: 0 10px;
     justify-content: space-between;
   }
-}
 }

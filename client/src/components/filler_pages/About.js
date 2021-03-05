@@ -8,16 +8,13 @@ function About() {
     <main>
       <section className="section flex-div central-body contact-page">
         <div className="top-banner">
-          <figure className="about-banner">
+          <figure>
             <img src="https://www.natoora.co.uk/img/pages/mission/natoora-mission-large001.jpg" alt="banner-image" />
           </figure>
         </div>
         <div className="below-banner">
-          <div className="form-heading">
-            <h1>CONTACT</h1>
-            <h3>Get in touch </h3>
-          </div>
-          <div className="index-header">
+          
+          <div className="index-header stores">
             <div className="stores-item">
               <figure>
                 <img src="https://www.natoora.co.uk/img/pages/contact-us/Small-images-x3_3.jpg" alt="natoora-store-image" />
@@ -26,11 +23,11 @@ function About() {
               <p>
               99 Scott Avenue, Suite J
               Brooklyn
-              NY 11237
+              NY 11237<br></br>
               T: + 1 347 927 0319
               </p>  
               <p>
-              General Enquiries: flavor@natoora.com
+              General Enquiries: flavor@natoora.com<br></br>
               Grocery Delivery: grocerydelivery@natoora.com
               </p>
             </div>
@@ -42,12 +39,12 @@ function About() {
               <p>
               1730 E. Holly Avenue, Suite 831
               El Segundo
-              CA 90245
-              T: + 1 323 628 5056
+              CA 90245<br></br>
+              T: + 1 323 628 5056<br></br>
               E: la@natoora.com
               </p>
               <p>
-              General Enquiries: flavor@natoora.com
+              General Enquiries: flavor@natoora.com<br></br>
               Grocery Delivery: grocerydelivery@natoora.com
               </p>
             </div>
@@ -59,11 +56,11 @@ function About() {
               <p>
               99 Scott Avenue, Suite J
               Brooklyn
-              NY 11237
+              NY 11237<br></br>
               T: + 1 347 927 0319
               </p>
               <p>
-              General Enquiries: flavor@natoora.com
+              General Enquiries: flavor@natoora.com<br></br>
               Grocery Delivery: grocerydelivery@natoora.com
               </p>
             </div>
@@ -75,12 +72,12 @@ function About() {
               <p>
               36 Rue du Séminaire
               Bâtiment G5C
-              94550 Chevilly-Larue
-              T: +33 (0)1 46 87 00 92
+              94550 Chevilly-Larue<br></br>
+              T: +33 (0)1 46 87 00 92<br></br>
               E: bonjour@natoora.com
               </p>
               <p>
-              General Enquiries: flavor@natoora.com
+              General Enquiries: flavor@natoora.com<br></br>
               Grocery Delivery: grocerydelivery@natoora.com
               </p>
             </div>

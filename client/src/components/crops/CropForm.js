@@ -21,6 +21,7 @@ function CropForm({ handleChange, handleSubmit, formdata, errors }) {
   
   return (
     <form className="add-crop-form register-form column is-half is-offset-one-quarter box" onSubmit={handleSubmit}>
+      <h1 className="form-heading">Something not on the list? <br></br><br></br>Let us know what you&apos;ve been enjoying growing RECENTLY.</h1>
       <label className="block-form label">Name</label>
       <input 
         className="block-form" 
@@ -55,7 +56,7 @@ function CropForm({ handleChange, handleSubmit, formdata, errors }) {
       }
       <label className="block-form label">Perennial</label>
       <input 
-        className="block-form"
+        className="block-form checkbox"
         type="checkbox" 
         name="isPerennial"
         onChange={handleChange} 
