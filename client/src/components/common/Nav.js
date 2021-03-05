@@ -42,7 +42,7 @@ function Nav() {
         </div>
         <div className={`navbar-menu ${isOpen ? 'is-active' : ''}`}>
           <div className="navbar-start">
-            <Link to="/crops" className="navbar-item"><button className="nav-button hover">FARMING</button></Link>
+            <Link to="/crops" className="navbar-item"><button className="nav-button hover">WHAT TO GROW</button></Link>
             <Link to="/crops/new" className="navbar-item"><button className="nav-button hover">COMMUNITY</button></Link>
             <Link to="/about-us" className="navbar-item"><button className="nav-button hover">ABOUT US</button></Link>
             <Link to="/contact-us" className="navbar-item"><button className="nav-button hover">CONTACT US</button></Link>

@@ -8,15 +8,14 @@ function Contact() {
   return (
     <main>
       <section className="section flex-div central-body contact-page">
-        <div className="top-banner">
-          <figure>
-            <img src="https://www.natoora.co.uk/img/pages/howtobuy/delivered/natoora-delivered-banner-uk.jpg" alt="banner-image" />
-          </figure>
+        <div className="box">
+          <img src="https://www.natoora.co.uk/img/pages/howtobuy/delivered/natoora-delivered-banner-uk.jpg" alt="banner-image" />
+          <div className="text">
+              CONTACT US
+          </div>
         </div>
         <div className="below-banner">
-          <div className="form-heading">
-            CONTACT
-          </div>
+          
           <div className="index-header stores">
             <div className="stores-item">
               <figure>

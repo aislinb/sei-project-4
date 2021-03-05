@@ -37,6 +37,10 @@ export function getAllCropTags() {
   return axios.get(`${baseUrl}/crop_tags/`)
 }
 
+export function getSingleCropTag(id) {
+  return axios.get(`${baseUrl}/crop_tags/${id}/`)
+}
+
 // * Auth Requests
 
 export function registerUser(formdata) {

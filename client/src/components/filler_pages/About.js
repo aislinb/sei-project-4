@@ -1,16 +1,17 @@
 import React from 'react'
 
-
 // import { Link } from 'react-router-dom'
+
 
 function About() {
   return (
     <main>
       <section className="section flex-div central-body contact-page">
-        <div className="top-banner">
-          <figure>
-            <img src="https://www.natoora.co.uk/img/pages/mission/natoora-mission-large001.jpg" alt="banner-image" />
-          </figure>
+        <div className="box">
+          <img src="https://www.natoora.co.uk/img/pages/mission/natoora-mission-large001.jpg" alt="banner-image" />
+          <div className="text">
+            ABOUT US
+          </div>
         </div>
         <div className="below-banner">
           

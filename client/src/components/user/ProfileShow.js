@@ -97,7 +97,7 @@ function profileShow() {
                       </div>
                     </div>
                     <div className="block-form">
-                      <h4>Crops you have created:</h4>
+                      <h4>Crops you have added:</h4>
                       <div className="block-form full-width created-crops">
                         {user && crops ? 
                           crops.map(crop => {
