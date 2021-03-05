@@ -58,12 +58,14 @@ function profileShow() {
       <section className="section central-body register-page profile-show">
         <div className="container">
           <div className="columns">
-            <div className="register-form column is-half is-offset-one-quarter box">
+            <div className="register-form column is-half is-offset-one-quarter box profile-wrapper">
               <h1>YOUR DETAILS</h1>
               {isLoggedIn ?
                 <>
                   <div className="profile-container block-form">
-                    <h3>Hello, {user.username}!</h3>
+                    <div>
+                      <h3>Hello, {user.username}!</h3>
+                    </div>                    
                     <div className="block-form">
                       <div className="block-form">
                         <div className="block-form">
@@ -95,17 +97,19 @@ function profileShow() {
                       </div>
                     </div>
                     <div className="block-form">
-                      <div className="block-form full-width">
-                        <h4>Crops you have created:</h4>
+                      <h4>Crops you have created:</h4>
+                      <div className="block-form full-width created-crops">
                         {user && crops ? 
                           crops.map(crop => {
                             if (crop.owner === user.id) {
                               return (
                                 <>
-                                  <Link to={`/crops/${crop.id}`}>
-                                    <div>{crop.name}</div>
-                                    <img src={crop.image} alt={crop.name}/>
-                                  </Link>
+                                  <div className="crop-div">
+                                    <Link to={`/crops/${crop.id}`}>
+                                      <div>{crop.name}</div>
+                                      <img src={crop.image} alt={crop.name}/>
+                                    </Link>
+                                  </div>
                                 </>
                               )
                             }

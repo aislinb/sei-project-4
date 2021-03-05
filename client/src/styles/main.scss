@@ -440,6 +440,38 @@ main {
   }
 }
 
+// CROP SHOW PAGE 
+
+.crop-show-page {
+  padding-top: 200px;
+  margin: auto;
+  align-items: center;
+  background: $brand-grey;
+  clear: both;
+  color: #fff;
+  
+
+  .crop-show-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    div {
+      max-width: 400px;
+      min-width: 300px;
+
+    }
+  .comments-area {
+    width: 100%;
+
+    .comments form {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  }
+  
+}
+
 // AUTH 
 
 .register-page {
@@ -607,22 +639,27 @@ main {
   
   align-items: center;
   margin: auto;
-  margin-top: -70px;
+  // margin-top: -70px;
 
-  main {
-    width: 90vw;
-    margin: 4rem auto 0 auto;
+  .profile-wrapper {
+
+    .created-crops {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      // justify-content: space-evenly;
+      align-content: flex-start;
   
+      .crop-div {
+        width: 150px;
+        margin-right: 20px;
+        
+      }
+    }
   }
 
-  .flex-div {
-    flex-direction: column;
-
-  }
-
-  .profile-container {
-    margin: auto;
-  }
+  
+  
 }
 
 //  INDEX PAGE

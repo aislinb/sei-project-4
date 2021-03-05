@@ -105,97 +105,111 @@ function CropShow() {
 
   return (
     <main>
-      <div className="flex-div central-body flex-div">
-        {!crop ?
-          <h8>loading...</h8>
-          :
-          <div className="crop-show-flex">
-            <div className="crop-details">
-              <h1>{name}</h1>
-              <h2>{binomialName}</h2>
-              <p>{description}</p>
-              {!tags ? 
-                <p>no tags</p>
-                :
-                tags.map(tag => {
-                  return <div key={tag.id} className="tag"><Link to={`${tag.id}/crops-in-tag`}>{tag.name}</Link></div>
-                })
-              }              
-              <p></p>
-              <figure>
-                <img src={image} alt={name} />
-              </figure>
-            </div>
-            <div className="owner-buttons">
-              {crop.owner === user.id ?
-                <div>
-                  <Link to={`${crop.id}/edit/`}><button className="edit-btn">Edit</button></Link>
-                  <button className="delete-btn" onClick={handleDelete}>Delete</button>
-                </div>
-                :
+      <section className="section central-body crop-show-page">
+        <div className="container">
+          {!crop ?
+            <h8>loading...</h8>
+            :
+            <div className="crop-show-flex">
+              <div className="crop-details">
+                <h1>{name}</h1>
+                <h2>{binomialName}</h2>
+                <p>{description}</p>
+                {!tags ? 
+                  <p>no tags</p>
+                  :
+                  
+                  tags.map(tag => {
+                    return (
+                      <div 
+                        key={tag.id}
+                        className="tag"
+                      >
+                        
+                        <Link to={`${tag.id}/crops-in-tag`}>{tag.name}</Link>
+                      </div>
+                    )
+                  })
+                }              
                 <p></p>
-              }
-            </div>
-            <div className="comments-area">
-              {isLoggedIn ? 
-                <div className="comments">
-                  <form onSubmit={handleSubmit}>
+                
+              </div>
+              <div className="image-block">
+                <figure>
+                  <img src={image} alt={name} />
+                </figure>
+                <div className="owner-buttons">
+                  {crop.owner === user.id ?
                     <div>
-                      <label>Leave a comment if you are growing this variety</label>
+                      <Link to={`${crop.id}/edit/`}><button className="edit-btn">Edit</button></Link>
+                      <button className="delete-btn" onClick={handleDelete}>Delete</button>
                     </div>
-                    <textarea
-                      className="block-form" {...`input ${errors.text ? 'error-in-form' : ''}`}
-                      name="text"
-                      placeholder="Tell us what you thought..."
-                      onChange={handleChange}
-                      value={formdata.text}
-                    />
-                    {errors.text && <p className="error-in-form error-message">{errors.text}</p>}
-                    <button type="submit" className="submit-btn">Submit</button>
-                  </form>
+                    :
+                    <p></p>
+                  }
                 </div>
-                :
-                <h2><Link to='/register'>Register</Link> or <Link to='/login'>Login</Link> to leave a review!</h2>
-              }
-            </div>
-            <div className="reviews-and-ratings-wrapper">
-              <section className="reviews">
-                {crop && comments && comments.length > 0 ?
-                  <div>
-                    <h3>Reviews:</h3>
-                    {comments.map(comment => {
-                      return (
-                        <div key={comment.id} className="comment-block">
-                          <h5>{comment.owner.username}</h5>
-                          <p>{comment.text}</p>
-                          <div className="avatar">
-                            {comment.owner.userImage ? 
-                              <img src={comment.owner.userImage} alt="profile pic" />
-                              :
-                              <img src={profilePlaceholder} alt="profile pic" />
-                            }
-                          </div>
-                          
-                          {isOwner(comment.owner.id) && 
-                        <button className="delete-btn" onClick={() => handleCommentDelete(comment.id)}>Delete</button>
-                          }                   
-                        </div>
-                      )
-                    }
-                    )}
+              </div>
+              <div className="comments-area">
+                {isLoggedIn ? 
+                  <div className="comments">
+                    <form onSubmit={handleSubmit}>
+                      <div>
+                        <label>Leave a comment if you are growing this variety</label>
+                      </div>
+                      <textarea
+                        className="block-form" {...`input ${errors.text ? 'error-in-form' : ''}`}
+                        name="text"
+                        placeholder="Tell us what you thought..."
+                        onChange={handleChange}
+                        value={formdata.text}
+                      />
+                      {errors.text && <p className="error-in-form error-message">{errors.text}</p>}
+                      <button type="submit" className="submit-btn">Submit</button>
+                    </form>
                   </div>
                   :
-                  <div>
-                    <h3>Reviews:</h3>
-                    <p>Be the first to review this event!</p>
-                  </div>
+                  <h2><Link to='/register'>Register</Link> or <Link to='/login'>Login</Link> to leave a review!</h2>
                 }
-              </section>
+              </div>
+              <div className="reviews-and-ratings-wrapper">
+                <section className="reviews">
+                  {crop && comments && comments.length > 0 ?
+                    <div>
+                      <h3>Reviews:</h3>
+                      {comments.map(comment => {
+                        return (
+                          <div key={comment.id} className="comment-block">
+                            <h5>{comment.owner.username}</h5>
+                            <p>{comment.text}</p>
+                            <div className="avatar">
+                              {comment.owner.userImage ? 
+                                <img src={comment.owner.userImage} alt="profile pic" />
+                                :
+                                <img src={profilePlaceholder} alt="profile pic" />
+                              }
+                            </div>
+                          
+                            {isOwner(comment.owner.id) && 
+                        <button className="delete-btn" onClick={() => handleCommentDelete(comment.id)}>Delete</button>
+                            }                   
+                          </div>
+                        )
+                      }
+                      )}
+                    </div>
+                    :
+                    <div>
+                      <h3>Reviews:</h3>
+                      <p>Be the first to review this event!</p>
+                    </div>
+                  }
+                </section>
+              </div>
             </div>
-          </div>
           
-        }
-      </div>
+          }
+        </div>
+      </section>
     </main>
 
   )
