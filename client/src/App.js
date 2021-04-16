@@ -13,6 +13,7 @@ import ProfileShow from './components/user/ProfileShow'
 import ProfileEdit from './components/user/ProfileEdit'
 import CropTagsIndex from './components/crop_tags/CropTagsIndex'
 
+import { ScrollToTop } from 'react-router-scroll-to-top'
 
 import About from './components/filler_pages/About'
 import Contact from './components/filler_pages/Contact'
@@ -25,24 +26,26 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Nav />
-      <Switch>
-        <Route exact path="/" component={Home}/>
-        <Route path="/crops/new" component={CropNew} />
-        <Route path="/crops/:id" component={CropShow} />
-        <Route path="/crop_tags" component={CropTagsIndex} />
-        <Route path="/crops" component={CropIndex} />
+      <ScrollToTop>
+        <Nav />
+        <Switch>
+          <Route exact path="/" component={Home}/>
+          <Route path="/crops/new" component={CropNew} />
+          <Route path="/crops/:id" component={CropShow} />
+          <Route path="/crop_tags" component={CropTagsIndex} />
+          <Route path="/crops" component={CropIndex} />
         
-        <Route path="/companions" component={CompanionGroups} />
-        <Route path="/register" component={Register} />
-        <Route path="/login" component={Login} />
-        <Route path="/profile" component={ProfileShow} />
-        <Route path="/update-profile" component={ProfileEdit} />
-        <Route path="/about-us" component={About} />
-        <Route path="/contact-us" component={Contact} />
-      </Switch>
-      <AboveFooter />
-      <Footer />
+          <Route path="/companions" component={CompanionGroups} />
+          <Route path="/register" component={Register} />
+          <Route path="/login" component={Login} />
+          <Route path="/profile" component={ProfileShow} />
+          <Route path="/update-profile" component={ProfileEdit} />
+          <Route path="/about-us" component={About} />
+          <Route path="/contact-us" component={Contact} />
+        </Switch>
+        <AboveFooter />
+        <Footer />
+      </ScrollToTop>
     </BrowserRouter>
   )
 

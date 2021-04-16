@@ -5,7 +5,7 @@ function Footer() {
     <div className="footer">
       <div className="bottom-footer">
         <ul>
-          <li className="copy-footer">© YehCopyright 2020 MyNatoora Ltd</li>
+          <li className="copy-footer">© YehCopyright 2021 MyNatoora Ltd</li>
           <li className="copy-footer"><span>|</span>All rights reserved</li>
           <li><span>|</span><a href="natoora-privacy-policy">Privacy Policy</a></li>
           <li><span>|</span><a href="natoora-terms-of-use.php">Terms of Use</a></li>

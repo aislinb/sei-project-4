@@ -81,7 +81,7 @@ function CropIndex() {
                 options={tags}
                 className="select-fields"
               />
-            </div>
+            </div> 
             <div className="crops-wrapper">
               <div className="index-list">
                 {crops.map(item => {

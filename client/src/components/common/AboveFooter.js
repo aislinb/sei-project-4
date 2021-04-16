@@ -39,12 +39,12 @@ function AboveFooter() {
           
           <ul>
             <li>
-              <input type="radio" id="chef-or-no">
+              <input type="radio" id="is-chef">
               </input>
               <label className="radio-select">I am a chef</label>
             </li>
             <li>
-              <input type="radio" id="chef-or-no">
+              <input type="radio" id="not-chef">
               </input>
               <label className="radio-select">I am not a chef</label>
             </li>

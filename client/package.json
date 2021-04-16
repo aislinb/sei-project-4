@@ -13,6 +13,7 @@
     "react-forms": "^1.0.0-rc6",
     "react-hero-carousel": "^1.0.3",
     "react-router-dom": "^5.2.0",
+    "react-router-scroll-to-top": "^1.1.2",
     "react-scripts": "4.0.1",
     "react-select": "^4.0.2",
     "react-spinners": "^0.10.4"

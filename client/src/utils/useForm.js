@@ -5,11 +5,17 @@ function useForm(initialState) {
   const [errors, setErrors] = React.useState(initialState)
 
   const handleChange = event => {
-    const nextState = { ...formdata, [event.target.name]: event.target.value }
+    const value = event.target.type === 'checkbox' ? event.target.checked : event.target.value
+    const nextState = { ...formdata, [event.target.name]: value }
     const nextErrorState = { ...errors, [event.target.name]: '' }
     setFormdata(nextState)
     setErrors(nextErrorState)
-    console.log(event.target.value)
+    
+  }
+
+  const handleMultiSelectChange = (selected, id) => {
+    const selectedItems = selected ? selected.map(item => item.value) : []
+    handleChange({ tags: { id, value: selectedItems } })
   }
 
   return {
@@ -17,7 +23,8 @@ function useForm(initialState) {
     errors,
     setErrors,
     setFormdata,
-    handleChange
+    handleChange,
+    handleMultiSelectChange
   }
 }
 
